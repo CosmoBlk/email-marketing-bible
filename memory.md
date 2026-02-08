@@ -22,17 +22,17 @@
 
 ## Current State (as of 9 Feb 2026)
 
-### EMB v4 Document — DRAFT COMPLETE ✅
+### EMB v4 Document — EDITED ✅
 
-All 16 chapters + 4 appendices written across 4 files:
+Expert edit complete. All 16 chapters + 4 appendices across 4 files:
 
 | File | Chapters | Words | Status |
 |------|----------|-------|--------|
-| `emb-research/EMB_v4_part1.md` | Intro, Ch 1–4 | ~16,000 | Draft complete |
-| `emb-research/EMB_v4_part2.md` | Ch 5–8 | ~15,200 | Draft complete |
-| `emb-research/EMB_v4_part3.md` | Ch 9–11 | ~11,700 | Draft complete |
-| `emb-research/EMB_v4_part4.md` | Ch 12–16, Appendices A–D, Closing | ~16,400 | Draft complete |
-| **Total** | | **~59,300 words** | |
+| `emb-research/EMB_v4_part1.md` | Intro, Ch 1–4 | ~15,500 | Edited |
+| `emb-research/EMB_v4_part2.md` | Ch 5–8 | ~15,100 | Edited |
+| `emb-research/EMB_v4_part3.md` | Ch 9–11 | ~9,300 | Edited |
+| `emb-research/EMB_v4_part4.md` | Ch 12–16, Appendices A–D, Closing | ~15,000 | Edited |
+| **Total** | | **~55,000 words** | |
 
 ### Chapter Structure
 
@@ -47,7 +47,7 @@ All 16 chapters + 4 appendices written across 4 files:
 9. Analytics and Measurement
 10. Compliance and Privacy
 11. Industry Playbooks
-12. The Platform Landscape
+12. Choosing Your Platform
 13. Cold Email and B2B Outbound
 14. AI and the Future of Email
 15. Company Case Studies
@@ -59,7 +59,7 @@ All 16 chapters + 4 appendices written across 4 files:
 
 ### What's New in v4 (vs v3)
 - Cold email chapter (Ch 13)
-- Spam traps deep dive (Ch 2)
+- Spam traps section (Ch 2)
 - AI and email chapter (Ch 14)
 - Company case studies throughout (Ch 15)
 - Sending identity guide (domain separation, auth stack)
@@ -94,6 +94,14 @@ Research topics covered:
 1. **Research phase** — Completed across 12 research sprints covering all major email marketing topics
 2. **EMB v4 compilation** — All research synthesised into 16 chapters + appendices (~59K words)
 3. **4-part file split** — Document split for manageability (Part 1: Intro+Ch1-4, Part 2: Ch5-8, Part 3: Ch9-11, Part 4: Ch12-16+Appendices)
+4. **Expert edit** — Full structural and editorial pass across all 4 parts. ~59K → ~55K words. Key changes:
+   - Voice consistency: removed 33 of 36 "I'd suggest" instances (replaced with direct imperatives), fixed "Here's the thing", removed "deep dive" from headings, renamed "The Platform Landscape" → "Choosing Your Platform"
+   - Fixed chapter numbering errors in intro
+   - Consolidated duplicate content: Subscriber LTV (was in Ch3 and Ch9, now cross-referenced), Halo Effect (was in Ch1 and Ch9, now cross-referenced)
+   - Major structural cuts to Industry Playbooks (Ch 11): consolidated Healthcare, Financial Services, Real Estate, Education, Professional Services, B2B Manufacturing, Restaurant/Food, Fitness into 3 grouped sections
+   - Condensed Expert Directory (Ch 16) from ~2K words of individual bios to ~500 words grouped by specialty
+   - Trimmed platform write-ups (Ch 12) after comparison table
+   - General tightening throughout: cut filler, redundancy, repetitive closings
 
 ---
 
@@ -101,9 +109,9 @@ Research topics covered:
 
 See `plan.md` for the detailed roadmap. Summary:
 
-1. **🔜 EMB v4 Expert Edit** — Fresh, from-first-principles edit of the entire document. Three goals: tighten the writing, ensure George's voice is consistent, and make every section earn its place. Document can shrink from 59K to whatever length serves readers best. Quality over quantity.
-
-2. **EMB Skill File** — Convert the edited EMB v4 into a Claude Code SKILL.md file that can be installed and used as an AI email marketing co-pilot.
+1. ~~**EMB v4 Expert Edit**~~ ✅ Complete
+2. **🔜 EMB Skill File** — Convert the edited EMB v4 into a Claude Code SKILL.md file that can be installed and used as an AI email marketing co-pilot.
+3. **Publish & Distribute** — Push to GitHub, update README.
 
 ---
 
@@ -114,7 +122,7 @@ See `plan.md` for the detailed roadmap. Summary:
 - **40 experts referenced** throughout — full directory in Chapter 16.
 - **Open source:** Research crawler at [github.com/CosmoBlk/emb-research](https://github.com/CosmoBlk/emb-research)
 - **Target format:** Both standalone reading AND Claude Code skill consumption.
-- **The edit can reduce word count** — 59K may be too long. The expert edit should cut ruthlessly where needed. Better to be 35K brilliant words than 59K adequate ones.
+- **Edit reduced word count** — 59K → 55K. Cuts focused on duplicates, niche industry playbooks, verbose platform write-ups, and expert directory bios. The core instructional content is preserved.
 
 ---
 

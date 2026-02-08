@@ -2,7 +2,7 @@
 
 ---
 
-## Chapter 12: The Platform Landscape
+## Chapter 12: Choosing Your Platform
 
 Choosing an email platform is one of those decisions that feels reversible but rarely is. The switching costs are real. Not just in dollars, but in time, rebuilt automations, re-warmed domains, and the inevitable dip in deliverability during migration. I've watched companies spend six months recovering from a poorly planned platform switch.
 
@@ -32,7 +32,7 @@ Pay attention to webhook support and API quality. Even if you don't need custom 
 
 Watch out for hidden costs. Some platforms charge extra for SMS, for additional users, for priority support, for advanced reporting, or for removing their branding from your emails. The advertised price is often the starting price, not the real price. Calculate the total cost at your expected usage level, including all the features you actually need.
 
-I'd suggest making a shortlist of three platforms, running real campaigns through free trials or demos, and making your decision based on actual experience rather than feature comparison spreadsheets. The platform that feels right when you're building your third automation is usually the right choice.
+Make a shortlist of three platforms, running real campaigns through free trials or demos, and making your decision based on actual experience rather than feature comparison spreadsheets. The platform that feels right when you're building your third automation is usually the right choice.
 
 ### Platform Comparison
 
@@ -56,33 +56,19 @@ Here's an expanded comparison of the major platforms worth considering in 2026.
 | Sendlane | Ecommerce | Custom pricing | Deep ecommerce, SMS |
 | Omnisend | Ecommerce | Free (250 contacts) | Email + SMS + push combined |
 
-That's fifteen platforms, and I could easily list another fifteen. The market is that crowded. But rather than getting lost in feature lists, let me highlight what the data says about actual performance.
+That's fifteen platforms, and I could list another fifteen. The market is that crowded. A few things worth noting.
 
-A few notes on the table. Mailchimp's free tier was reduced from 2,000 to 500 contacts, which pushed many small businesses toward Kit or Brevo. Kit's free tier at 10,000 subscribers is the most generous in the market, though it limits automation features. beehiiv has emerged as the newsletter-specific platform of choice since launching in 2022, largely because Tyler Denk built it specifically to solve the problems he encountered while growing Morning Brew.
+Mailchimp's free tier dropped from 2,000 to 500 contacts, pushing many small businesses toward Kit or Brevo. Kit's free tier at 10,000 subscribers is the most generous in the market. beehiiv has emerged as the newsletter platform of choice since 2022, because Tyler Denk built it to solve the problems he encountered growing Morning Brew.
 
 ### Platform Performance Data
 
-**Klaviyo** publishes some of the most transparent performance data in the industry. Their top 10% of users convert at 0.44%, which is 5.5 times the average of 0.08%. More telling: automations generate 30 times more revenue per recipient than campaigns. That stat alone should tell you where to invest your time on Klaviyo. If you're spending 80% of your effort on campaigns and 20% on automations, flip it.
+**Klaviyo's** top 10% of users convert at 0.44% (5.5x the average of 0.08%). Automations generate 30x more revenue per recipient than campaigns. If you're spending 80% of your effort on campaigns and 20% on automations, flip it. The gap between average users and top performers is entirely about how they use the tools: tighter segmentation, more granular triggers, better copy, more testing.
 
-The gap between Klaviyo's average users and top performers is instructive. It shows that the platform provides the tools, but the results depend on how you use them. The top 10% aren't using different features. They're using the same features more thoughtfully: tighter segmentation, more granular automation triggers, better copy, more testing.
+**HubSpot** reports 129% more leads and 36% more closed deals after one year of use. CRM-integrated email outperforms standalone email, especially in B2B. The flywheel effect (email feeds CRM, CRM makes email smarter) is HubSpot's real value proposition.
 
-**HubSpot** reports that after one year of use, businesses see 129% more leads and 36% more closed deals. Those numbers come from their internal data and should be taken with appropriate context, but the directional truth is clear. CRM-integrated email outperforms standalone email, especially in B2B where the sales cycle is long and multi-touch.
+**Brevo's** pricing model charges by email volume rather than subscriber count. You can have 100,000 subscribers and only pay for what you send. This rewards list hygiene rather than penalising list growth.
 
-HubSpot's strength is the unified view of the customer journey. When your sales team can see which emails a prospect opened, which content they downloaded, and which pages they visited, the sales conversation becomes dramatically more relevant. The email programme feeds the CRM, and the CRM makes the email programme smarter. That flywheel effect is HubSpot's real value proposition.
-
-**Brevo** has strong case studies in hospitality and food service. Suntransfers achieved 40% revenue growth through Brevo's multi-channel approach. Buffalo Grill drove 47% more repeat visits using targeted email combined with SMS. The multi-channel angle is Brevo's genuine differentiator for mid-market companies that want email, SMS, and chat in one platform without enterprise pricing.
-
-For small businesses on a tight budget, Brevo's pricing model (based on email volume rather than subscriber count) is worth examining. You can have 100,000 subscribers and only pay for the emails you actually send. This structure rewards list hygiene rather than penalising list growth.
-
-**Loops** reports near-zero churn for companies with 5,000 to 10,000 users, which speaks to their product-led growth focus. If you're a SaaS company where onboarding emails, feature announcements, and usage-based triggers are your bread and butter, Loops is purpose-built for that use case in a way that Mailchimp or Klaviyo simply isn't.
-
-What makes Loops different is the mental model. Marketing ESPs think in terms of campaigns and audiences. Loops thinks in terms of product events and user journeys. When a user completes onboarding step 3, Loops triggers the step 4 email. When a user hasn't logged in for 7 days, Loops sends the re-engagement prompt. The entire platform is structured around product behaviour rather than marketing calendars.
-
-**Resend** has captured the developer audience in a way few email tools have managed. React Email has over 18,000 GitHub stars and 920,000 weekly npm downloads. That's a staggering adoption curve. If your team builds emails in code and wants component-based email development, Resend treats email as a first-class engineering concern rather than a marketing afterthought.
-
-The appeal is straightforward: developers want to build emails the same way they build everything else, with components, version control, and programmatic logic. Resend lets them do that. For companies with strong engineering teams and limited marketing resources, this approach is often more sustainable than a traditional drag-and-drop editor.
-
-**Postmark** consistently delivers transactional emails in under one second median delivery time. When your password reset email or order confirmation needs to arrive instantly, Postmark's infrastructure is purpose-built for that. They deliberately don't offer bulk marketing sends because it would compromise their transactional deliverability. This focus is their strength. They do one thing and they do it better than anyone.
+**Loops** thinks in product events and user journeys, not campaigns and audiences. Purpose-built for SaaS onboarding and product email. **Resend** treats email as a first-class engineering concern with React Email components. **Postmark** delivers transactional emails in under one second. They deliberately don't offer bulk marketing sends because it would compromise their transactional deliverability.
 
 ### Budget ESP Comparison for Small Businesses
 
@@ -166,7 +152,7 @@ Here's the infrastructure you need:
 
 **Warm each inbox for two to four weeks before sending.** Use a warmup service (most cold email tools include this) that gradually increases sending volume while generating positive engagement signals. The warmup service sends emails between your inbox and other inboxes in its network, with automatic opens and replies, simulating the behaviour of a legitimate sender. The inbox needs to build a reputation as a legitimate sender before you put outreach through it.
 
-**Limit volume to 10 to 30 emails per inbox per day.** Some practitioners push to 50, but I'd suggest staying conservative, especially in the first few months. Higher volume per inbox increases the risk of triggering spam filters. Distribute volume across multiple inboxes. If you have ten inboxes sending 20 emails each, that's 200 emails per day with much lower risk per inbox than sending 200 from a single inbox.
+**Limit volume to 10 to 30 emails per inbox per day.** Some practitioners push to 50, but stay conservative, especially in the first few months. Higher volume per inbox increases the risk of triggering spam filters. Distribute volume across multiple inboxes. If you have ten inboxes sending 20 emails each, that's 200 emails per day with much lower risk per inbox than sending 200 from a single inbox.
 
 **Use a dedicated cold email tool.** Do not use your marketing ESP for cold outreach. Mailchimp, Klaviyo, ActiveCampaign, and similar platforms are designed for permission-based marketing. They will shut down your account for cold outreach because it threatens the deliverability reputation of their shared sending infrastructure. I've seen this happen dozens of times. The account gets suspended, your marketing emails stop, and you lose access to your subscriber data until you sort it out with their compliance team. Use a purpose-built cold email tool instead.
 
@@ -613,107 +599,27 @@ The lesson: respect for privacy and strong email marketing aren't mutually exclu
 
 ## Chapter 16: Expert Directory
 
-Email marketing benefits from a generous community of practitioners who share their knowledge openly. Here are 40 experts whose work I'd recommend following, grouped by specialisation. These people have collectively shaped how the industry thinks about email, and their content is worth your time regardless of your experience level.
+These 40 practitioners have shaped how the industry thinks about email. They're referenced throughout this guide where their specific insights are most useful. Follow them for ongoing education.
 
-### Strategists and Thought Leaders
+**Strategy:** Chad S. White (Oracle, author of *Email Marketing Rules*) | Kath Pay (Holistic Email Marketing, 26+ years) | Jay Schwedelson (SubjectLine.com, GURU Conference) | Jeanne Jennings (Email Optimization Shop, Georgetown professor) | Dela Quist (Alchemy Worx, EEC 2022 Thought Leader) | Ann Handley (MarketingProfs, 'Total Annarchy' newsletter) | Ryan Phelan (RPEOrigin, Chairman Emeritus EEC)
 
-1. **Chad S. White** | Head of Research, Oracle Digital Experience Agency. Author of *Email Marketing Rules*, the definitive reference for email marketing best practices. His research-driven approach to email strategy sets the standard for the industry.
+**Platform Builders:** Nathan Barry (Kit, 600K+ creators) | Tyler Denk (beehiiv, ex-Morning Brew #2) | Jimmy Kim (Sendlane, DTC focus) | Brennan Dunn (RightMessage, personalisation pioneer)
 
-2. **Kath Pay** | Founder and CEO, Holistic Email Marketing. Over 26 years in email marketing. Her approach integrates email into the broader customer experience rather than treating it as an isolated channel. Author of *Holistic Email Marketing*.
+**Copywriting:** Joanna Wiebe (Copyhackers, coined 'conversion copywriting') | Laura Belgray (Talking Shrimp) | Ben Settle (Email Players, daily email approach) | Chris Orzechowski (Orzy Media, ecommerce copy) | Samar Owais (Emails Done Right, SaaS sequences) | Tarzan Kay (course creator email)
 
-3. **Jay Schwedelson** | Founder, SubjectLine.com and GURU Conference (50,000+ attendees). Nobody has tested more subject lines. His data on what works in subject lines is unmatched in the industry, and his conference is the largest email marketing event in the world.
+**Deliverability:** Matthew Vernhout (Netcore Cloud) | Troy Ericson (EmailDeliverability.com, 'The Email Paramedic') | Lauren Meyer (SocketLabs)
 
-4. **Jeanne Jennings** | Founder, Email Optimization Shop. Georgetown University professor. Brings academic rigour to email marketing optimisation without losing practical applicability. Her Email Optimization Shop newsletter is consistently excellent.
+**Design and Technical:** Mark Robbins (Customer.io, CSS-only email) | Paul Airy (Beyond the Envelope, accessibility) | Justin Khoo (FreshInbox, interactive email) | Jason Rodriguez (GitHub, ex-Litmus)
 
-5. **Dela Quist** | Founder and CMO, Alchemy Worx. Email Experience Council 2022 Thought Leader of the Year. His contrarian views on email frequency challenge industry orthodoxy and are backed by data. Worth following specifically because he'll make you question your assumptions.
+**Ecommerce and Retention:** Chase Dimond (Structured Agency, $200M+ in email revenue) | Val Geisler (Fix My Churn, behaviour-based onboarding) | Reinis Krumins (agencyJR, DTC email+SMS) | Danavir Sarria (SupplyDrop, flow architecture)
 
-6. **Ann Handley** | Chief Content Officer, MarketingProfs. Her 'Total Annarchy' newsletter is a masterclass in personality-driven email marketing. Proves that B2B email doesn't have to be boring. One of the few marketers who practices exactly what she preaches.
+**Agency:** Scott Cohen (InboxArmy) | Garin Hobbs (InboxArmy, lifecycle design)
 
-7. **Ryan Phelan** | Managing Director, RPEOrigin. Chairman Emeritus, Email Experience Council. Decades of enterprise email strategy experience with a focus on programme-level thinking rather than individual campaign optimisation.
+**Newsletter Growth:** Dan Oshinsky (Inbox Collective) | Matt McGarry (GrowLetter, paid acquisition) | Liz Wilcox ('The Fresh Princess of Email Marketing')
 
-### Tool Founders and Platform Builders
+**Consultants:** Ian Brodie (author of *Email Persuasion*) | Jordie van Rijn (Emailmonday, platform comparisons) | Eman Ismail (ethical email strategy) | Andrew Kordek (iPost)
 
-8. **Nathan Barry** | Founder and CEO, Kit (formerly ConvertKit). Built a platform that serves 600,000+ creators. His transparent approach to building in public has influenced how SaaS companies communicate with their audiences.
-
-9. **Tyler Denk** | Co-Founder and CEO, beehiiv. Employee number two at Morning Brew before founding beehiiv. Brings firsthand experience with newsletter growth tactics into platform design.
-
-10. **Jimmy Kim** | CEO and Co-Founder, Sendlane. Deep ecommerce email expertise with a focus on DTC brands. His content on email and SMS integration for ecommerce is consistently practical and actionable.
-
-11. **Brennan Dunn** | Founder, RightMessage. Pioneer in email personalisation and segmentation. His work on survey-driven segmentation and dynamic content has influenced how the industry thinks about relevance.
-
-### Email Copywriting Experts
-
-12. **Joanna Wiebe** | Founder, Copyhackers. The original conversion copywriter. Her frameworks for persuasive email copy are taught across the industry.
-
-13. **Laura Belgray** | Founder, Talking Shrimp. Her personality-driven email style proves that being yourself in marketing copy outperforms being 'professional.'
-
-14. **Ben Settle** | Founder, Email Players Newsletter. Controversial, opinionated, and effective. His daily email approach (selling in every email) works specifically because of his distinct voice and polarising style.
-
-15. **Chris Orzechowski** | Founder, Orzy Media. Specialises in ecommerce email copywriting and has written about the financial mechanics of email marketing more clearly than almost anyone in the space.
-
-16. **Samar Owais** | Email Conversion Strategist, Emails Done Right. Specialises in SaaS email sequences, particularly onboarding and retention. Her focus on the full customer journey through email is refreshing.
-
-17. **Tarzan Kay** | Email Marketing Educator. Known for teaching email marketing to course creators and coaches. Her approach to launch sequences and evergreen funnels is practical and tested.
-
-### Deliverability Experts
-
-18. **Matthew Vernhout** | VP Deliverability, Netcore Cloud. One of the most experienced deliverability professionals in the industry. His technical knowledge of email authentication and ISP relationships is deep.
-
-19. **Troy Ericson** | Founder, EmailDeliverability.com. Focuses on practical deliverability fixes for creators and ecommerce brands. Makes deliverability accessible without oversimplifying the technical realities.
-
-20. **Lauren Meyer** | CMO, SocketLabs. Brings both marketing and deliverability expertise, a rare combination that gives her a practical perspective on how deliverability impacts real business outcomes.
-
-### Design and Technical
-
-21. **Mark Robbins** | Software Engineer, Customer.io. Pushes the boundaries of what's possible in email HTML and CSS. His experiments with interactive email elements have expanded the industry's understanding of email design.
-
-22. **Paul Airy** | Founder, Beyond the Envelope. Email design specialist focused on accessibility and user experience. His work on accessible email design has raised standards across the industry.
-
-23. **Justin Khoo** | Founder, FreshInbox and ProofJump. Pioneer in interactive email technology. His tools and content have made interactive email elements more accessible to non-developers.
-
-24. **Jason Rodriguez** | Marketing Operations, GitHub. Formerly at Litmus, his work on email development best practices and cross-client compatibility has shaped how the industry approaches email coding.
-
-### Ecommerce and Retention
-
-25. **Chase Dimond** | Co-Founder, Structured Agency. Manages email for major ecommerce brands. His breakdowns of ecommerce email strategy on social media are consistently actionable.
-
-26. **Val Geisler** | Founder, Fix My Churn. Specialises in reducing SaaS churn through better onboarding and retention email. Her email teardowns are educational and entertaining.
-
-27. **Reinis Krumins** | Co-Founder, agencyJR. Focuses on ecommerce email and SMS for DTC brands. His agency's case studies offer detailed performance data that's rare in the industry.
-
-28. **Danavir Sarria** | Founder, SupplyDrop. Ecommerce email strategist who publishes detailed analyses of email programme structures, revenue attribution, and flow architecture.
-
-### Agency Leaders
-
-29. **Scott Cohen** | CEO, InboxArmy. Leads one of the largest dedicated email marketing agencies. His perspective on email programme management at scale is informed by work across hundreds of clients.
-
-30. **Garin Hobbs** | Director of Lifecycle and Retention, InboxArmy. Focuses on the strategic side of email marketing with particular expertise in lifecycle programme design and optimisation.
-
-### Newsletter Growth
-
-31. **Dan Oshinsky** | Founder, Inbox Collective. Newsletter strategy consultant who works with media companies and individual creators. His newsletter audits are thorough and actionable.
-
-32. **Matt McGarry** | Founder, GrowLetter. Specialises in newsletter growth through paid acquisition. His data on subscriber acquisition costs across channels is uniquely valuable.
-
-33. **Liz Wilcox** | 'The Fresh Princess of Email Marketing.' Makes email marketing accessible and fun for small businesses and solopreneurs. Her membership model and teaching style have built a passionate community.
-
-### Consultants and Educators
-
-34. **Ian Brodie** | Author of *Email Persuasion*. Focuses on email marketing for consultants and professional services firms. His frameworks for building authority through email are well-tested.
-
-35. **Jordie van Rijn** | Founder, Emailmonday. Publishes some of the most comprehensive email marketing platform comparisons available. His vendor-neutral perspective is valuable for platform selection decisions.
-
-36. **Eman Ismail** | Email Conversion Strategist. Her email case studies and teardowns offer detailed analysis of what works and why. Brings a strong focus on ethical marketing practices.
-
-37. **Andrew Kordek** | VP Customer Engagement, iPost. Long career in email marketing strategy and technology. His experience spans both the agency and platform sides of the industry.
-
-### Content Creators
-
-38. **Alex Cattoni** | Founder, Copy Posse. Teaches copywriting through YouTube and courses. Her email marketing content reaches a wide audience of freelancers and small business owners.
-
-39. **Noah Kagan** | Chief Sumo, AppSumo. Built AppSumo's email list into one of the most valuable assets in SaaS marketing. His practical, no-nonsense approach to email growth is consistently useful.
-
-40. **Gavin Laugenie** | Head of Strategy, Dotdigital. Brings platform-side insight to email strategy discussions. His content bridges the gap between email marketing theory and platform-specific implementation.
+**Content Creators:** Alex Cattoni (Copy Posse) | Noah Kagan (AppSumo, 750K+ list) | Gavin Laugenie (Dotdigital)
 
 ---
 
@@ -821,7 +727,7 @@ Email frequency is one of the most debated topics in email marketing, and the an
 
 These are starting points. The right frequency for your brand depends on your content quality, your audience's expectations, and your engagement data. If your unsubscribe rate rises above 0.3% per send, you're likely sending too often or your content isn't matching expectations. Watch the relationship between frequency and engagement rate. When engagement drops as frequency increases, you've found your ceiling.
 
-I'd suggest starting at the lower end of the range and increasing gradually while monitoring engagement metrics. It's easier to increase frequency (subscribers welcome more of what they like) than to decrease it (reducing frequency signals that you were previously sending too much, and the trust damage is already done).
+Start at the lower end of the range and increase gradually while monitoring engagement metrics. It's easier to increase frequency (subscribers welcome more of what they like) than to decrease it (reducing frequency signals that you were previously sending too much, and the trust damage is already done).
 
 One more thing on frequency: the subscribers who complain about getting too many emails are rarely your best customers. Your best customers want to hear from you. Don't let the vocal minority drive your frequency decisions. Look at the data for your most engaged, highest-spending segments separately from your overall list.
 

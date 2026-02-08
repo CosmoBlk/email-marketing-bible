@@ -5,7 +5,7 @@
 
 ---
 
-## Status: Step 1 Complete → Step 2 Next
+## Status: Step 2 Complete → Step 3 Next
 
 ---
 
@@ -18,7 +18,7 @@
 
 ---
 
-## Step 2: Expert Edit of EMB v4 🔜 NEXT
+## Step 2: Expert Edit of EMB v4 ✅ COMPLETE
 
 ### The Brief
 
@@ -53,13 +53,24 @@ The document was compiled across many sessions. George's voice is direct, practi
 - `emb-research/EMB_v4_part3.md` (~12K words)
 - `emb-research/EMB_v4_part4.md` (~16K words)
 
+### Results
+
+- Reduced from ~59,300 → ~55,000 words (~4,300 words cut)
+- Fixed all voice consistency issues (36 "I'd suggest" → 3, removed "Here's the thing", "deep dive" headings, "landscape" in titles)
+- Fixed chapter numbering errors in intro
+- Consolidated duplicate content (Subscriber LTV, Halo Effect cross-referenced instead of duplicated)
+- Major structural cuts to Industry Playbooks (Ch 11): consolidated 8 niche playbooks into 3 grouped sections
+- Condensed Expert Directory (Ch 16) from individual bios to compact grouped format
+- Trimmed platform write-ups (Ch 12) after comparison table
+- Renamed Ch 12 from "The Platform Landscape" to "Choosing Your Platform"
+
 ### Reference
 - George's tone: Use the `george-tone` skill
 - EMB v4 intro (Part 1, lines 1–60) as voice benchmark
 
 ---
 
-## Step 3: Create EMB Skill File
+## Step 3: Create EMB Skill File 🔜 NEXT
 
 After the edit is complete, convert the final EMB v4 into a Claude Code `SKILL.md` file.
 

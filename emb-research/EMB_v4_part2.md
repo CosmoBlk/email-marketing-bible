@@ -16,7 +16,7 @@ Your subject line is the most consequential piece of copy you'll write. 64% of p
 
 For mobile, keep it under 30 characters if you can. Anything beyond that gets truncated on most phones, and with 60%+ of emails opened on mobile, that truncation point is your hard ceiling for making an impression.
 
-**Be specific, not clever.** I'd suggest treating your subject line like a newspaper headline, not a riddle. "3 ways to reduce your cart abandonment rate" will almost always outperform "You won't believe this secret." Specificity sets an expectation. Cleverness creates confusion.
+**Be specific, not clever.** Treat your subject line like a newspaper headline, not a riddle. "3 ways to reduce your cart abandonment rate" will almost always outperform "You won't believe this secret." Specificity sets an expectation. Cleverness creates confusion.
 
 Numbers work particularly well. They signal concrete, scannable value. "5 templates for your welcome series" tells the reader exactly what they're getting.
 
@@ -28,7 +28,7 @@ Numbers work particularly well. They signal concrete, scannable value. "5 templa
 
 **The Ben Settle approach.** Ben Settle sends a daily email and rarely uses conventional subject lines. His approach is personality-driven curiosity. Short, cryptic, sometimes bizarre. "The vampire method." "What my cat taught me about copywriting." It works because his audience expects it and because each email delivers something genuinely interesting. The lesson isn't to copy his style. It's that subject lines are a contract with your audience, and that contract can take many forms.
 
-**Question vs statement subject lines produce mixed results.** Some audiences respond better to questions ("Is your welcome series broken?"), others to statements ("Your welcome series is probably broken"). I'd suggest testing both for your audience rather than adopting a blanket rule.
+**Question vs statement subject lines produce mixed results.** Some audiences respond better to questions ("Is your welcome series broken?"), others to statements ("Your welcome series is probably broken"). Test both for your audience rather than adopting a blanket rule.
 
 **Negative framing can outperform positive framing.** "Don't make this mistake with your email flows" can beat "How to improve your email flows." This taps into loss aversion, a psychological principle we'll cover shortly. People are more motivated to avoid a mistake than to achieve a gain.
 
@@ -44,7 +44,7 @@ Keep your preview text under 50 characters. It should complement the subject lin
 
 If you leave the preview text blank, email clients will pull the first text they can find in your email body. Usually that's "View this email in your browser" or an image alt tag. It looks sloppy and wastes prime real estate.
 
-I'd suggest writing your subject line and preview text as a pair, not as an afterthought.
+Write your subject line and preview text as a pair, not as an afterthought.
 
 **Technically, preview text goes in a hidden span or div at the very top of your email HTML, before any visible content.** Some ESPs provide a dedicated preview text field, which makes this easier. If yours doesn't, you'll need to add it manually. A common technique is to follow your preview text with a string of zero-width spaces and non-breaking spaces. This pads the preview so email clients don't pull in additional body text after your intended preview.
 
@@ -104,11 +104,11 @@ Example: "Promise: Get your first 100 subscribers in 30 days. Picture: Imagine w
 
 Introduce a character (the star), tell their story (ideally one your reader relates to), and reveal your product as the solution. This framework excels in nurture sequences where you're building connection over time. The star can be a customer, yourself, or even the reader.
 
-The power of Star-Story-Solution is that it doesn't feel like marketing. It reads like a story with a point. The reader gets emotionally invested in the star's journey, and by the time you present the solution, they're already leaning forward. I'd suggest using this framework for customer case studies, founder stories, and any email where you want the reader to see themselves in someone else's experience.
+The power of Star-Story-Solution is that it doesn't feel like marketing. It reads like a story with a point. The reader gets emotionally invested in the star's journey, and by the time you present the solution, they're already leaning forward. Use this framework for customer case studies, founder stories, and any email where you want the reader to see themselves in someone else's experience.
 
 **The Soap Opera Sequence (Andre Chaperon)**
 
-This is the most sophisticated email framework I know, and the one I'd suggest studying if you're serious about email copywriting. Andre Chaperon developed it to create multi-email narratives that use cliffhangers and open loops to keep subscribers reading.
+This is the most sophisticated email framework I know, and the one worth studying if you're serious about email copywriting. Andre Chaperon developed it to create multi-email narratives that use cliffhangers and open loops to keep subscribers reading.
 
 The structure across a sequence:
 
@@ -168,7 +168,7 @@ Practically, the Zeigarnik Effect explains why TV shows end on cliffhangers and 
 
 Genuine scarcity works. Limited-time offers, limited-stock products, enrollment windows that actually close. these create real urgency and motivate action.
 
-Fake scarcity destroys trust. Countdown timers that reset when you revisit the page. "Only 2 left!" on a digital product. "Doors closing forever!" when they reopen every quarter. Subscribers talk. They screenshot. They notice. And once they catch you manufacturing urgency, every future claim you make is suspect. I'd suggest only ever using scarcity you can stand behind honestly.
+Fake scarcity destroys trust. Countdown timers that reset when you revisit the page. "Only 2 left!" on a digital product. "Doors closing forever!" when they reopen every quarter. Subscribers talk. They screenshot. They notice. And once they catch you manufacturing urgency, every future claim you make is suspect. Only ever use scarcity you can stand behind honestly.
 
 ### CTAs That Work
 
@@ -198,7 +198,7 @@ Use the P.S. for one of three purposes: reinforcing your main CTA with a differe
 
 One marketer I follow shared this: "I added a plain-text P.S. to every email with a personal note. CTR went up 22%." That's not a controlled study, but it aligns with what I've seen. The P.S. humanises an email. It says, "Hey, I'm still here. This isn't a bot."
 
-I'd suggest adding a P.S. to every promotional and newsletter email you send. It costs nothing and consistently lifts performance.
+Add a P.S. to every promotional and newsletter email you send. It costs nothing and consistently lifts performance.
 
 **P.S. best practices:** Keep it to one or two sentences. Don't bury critical information in the P.S. that belongs in the body. Use it as a second chance to make your case, not as a dumping ground for things you forgot to include. And make the P.S. sound distinctly different from the rest of the email. If the body is polished and professional, let the P.S. be casual and personal. If the body tells a story, let the P.S. deliver the punchline.
 
@@ -214,7 +214,7 @@ HubSpot ran tests and found that HTML emails with images actually decreased clic
 
 **Designed emails outperform for ecommerce**, where product images are essential to the buying decision. You can't sell a dress without showing the dress. If your email needs to showcase visual products, you need HTML.
 
-**The 'designed plain text' hybrid is where many smart marketers land.** A clean template with minimal branding, primarily text-based, with perhaps a logo in the header and a styled CTA button. It looks intentional but doesn't trigger the "this is marketing" filter in the reader's brain. This is the approach I'd suggest for most SaaS, education, and service businesses.
+**The 'designed plain text' hybrid is where many smart marketers land.** A clean template with minimal branding, primarily text-based, with perhaps a logo in the header and a styled CTA button. It looks intentional but doesn't trigger the "this is marketing" filter in the reader's brain. This is the right approach for most SaaS, education, and service businesses.
 
 **Heavy HTML triggers spam filters and the Gmail Promotions tab.** The more images, the more complex your HTML, the more likely your email ends up in Promotions rather than Primary. If inbox placement matters to you (it should), simpler is better.
 
@@ -371,7 +371,7 @@ Ensure keyboard navigability. All interactive elements should be reachable and o
 
 **Touch targets of 44x44px minimum** aren't just a mobile best practice. They're an accessibility requirement. Users with motor impairments need adequate target size.
 
-**Accessibility isn't a checklist you complete once.** It's a practice you maintain across every email. I'd suggest adding accessibility review to your email QA process. Before every send, check: does every image have alt text? Is the reading order logical? Do all buttons and links have sufficient size and contrast? Can you understand the email if you squint and can only read the headings and link text? If the answer to any of these is no, fix it before sending.
+**Accessibility isn't a checklist you complete once.** It's a practice you maintain across every email. Add accessibility review to your email QA process. Before every send, check: does every image have alt text? Is the reading order logical? Do all buttons and links have sufficient size and contrast? Can you understand the email if you squint and can only read the headings and link text? If the answer to any of these is no, fix it before sending.
 
 **Screen reader testing is the gold standard.** If you want to truly understand how accessible your emails are, test them with an actual screen reader. VoiceOver on Mac and iOS, NVDA on Windows, and TalkBack on Android are all free. Listening to your email read aloud by a screen reader will reveal issues that visual inspection never will. Aim to do this at least once per quarter on your most-used templates.
 
@@ -469,7 +469,7 @@ Move to `p=quarantine` (failed emails go to spam). This is your first enforcemen
 
 Finally, move to `p=reject` (failed emails are outright rejected). This is full enforcement and your end goal.
 
-**DMARC alignment can be relaxed or strict.** Relaxed alignment requires that the organisational domain matches. So mail.yourbrand.com and yourbrand.com would both pass. Strict alignment requires an exact domain match. Most setups need relaxed alignment for multi-ESP compatibility, and I'd suggest starting there unless you have a specific reason for strict alignment.
+**DMARC alignment can be relaxed or strict.** Relaxed alignment requires that the organisational domain matches. So mail.yourbrand.com and yourbrand.com would both pass. Strict alignment requires an exact domain match. Most setups need relaxed alignment for multi-ESP compatibility, and that's where you should start unless you have a specific reason for strict alignment.
 
 Matthew Vernhout has been one of the strongest advocates for DMARC adoption, and his guidance on phased implementation is worth following.
 
@@ -481,7 +481,7 @@ Requirements: BIMI requires DMARC enforcement (p=quarantine or p=reject), so you
 
 BIMI is currently supported by Gmail, Yahoo, and Apple Mail, which covers a substantial portion of consumer inboxes. The DNS record format is: `default._bimi.yourdomain.com` with a TXT record pointing to your logo SVG and VMC certificate.
 
-I'd suggest implementing BIMI once you have DMARC at enforcement. The investment is relatively small for the brand recognition benefit, especially for consumer-facing brands competing in crowded inboxes.
+Implement BIMI once you have DMARC at enforcement. The investment is relatively small for the brand recognition benefit, especially for consumer-facing brands competing in crowded inboxes.
 
 **ARC: Authenticated Received Chain**
 
@@ -497,7 +497,7 @@ MTA-STS forces TLS encryption for email in transit, preventing downgrade attacks
 
 **For multi-ESP setups, authentication gets complicated fast.** If you're using Klaviyo for marketing, SendGrid for transactional, Intercom for product emails, and Google Workspace for internal email, all four need to be covered by your SPF record and all four need DKIM configured with proper domain alignment. This is where the SPF 10-lookup limit becomes a real problem, and where SPF flattening or restructuring your setup becomes necessary.
 
-I'd suggest auditing your full authentication setup quarterly. ESPs change their sending infrastructure, domains expire, and new sending sources get added without updating DNS. A quick check of your SPF, DKIM, and DMARC records takes 15 minutes and can prevent deliverability problems before they start. Use dmarcian.com or postmarkapp.com/dmarc for easy DMARC monitoring and reporting.
+Audit your full authentication setup quarterly. ESPs change their sending infrastructure, domains expire, and new sending sources get added without updating DNS. A quick check of your SPF, DKIM, and DMARC records takes 15 minutes and can prevent deliverability problems before they start. Use dmarcian.com or postmarkapp.com/dmarc for easy DMARC monitoring and reporting.
 
 ### Sender Reputation
 
@@ -644,7 +644,7 @@ Testing your sender name is one of the highest-value tests you can run because t
 
 **Set up a branded sending domain instead of using your ESP's default.** When you send through your ESP's shared domain, you're sharing reputation with every other sender on that domain. You have no control over their practices, and their mistakes affect your deliverability. You also can't enforce DMARC on a domain you don't own, and your emails lack brand recognition in the sender details.
 
-I'd suggest setting up a branded sending domain once your database exceeds 5,000 profiles. Below that, the shared domain is acceptable. Above it, the investment in a branded domain pays for itself in improved deliverability and brand recognition.
+Set up a branded sending domain once your database exceeds 5,000 profiles. Below that, the shared domain is acceptable. Above it, the investment in a branded domain pays for itself in improved deliverability and brand recognition.
 
 **The reply-to strategy in practice:** Set your reply-to to an email address that's actively monitored. This can be a shared inbox (support@yourbrand.com), a personal address (george@yourbrand.com), or a dedicated address (hello@yourbrand.com). The key is that someone reads and responds to replies. When subscribers hit reply and get a bounce-back or silence, you lose the engagement signal and the trust.
 
@@ -652,7 +652,7 @@ Some marketers go further and actively encourage replies. "Hit reply and tell me
 
 **Subdomain strategy for larger organisations:**
 
-For brands sending at significant scale (100,000+ per month), I'd suggest a more detailed subdomain structure:
+For brands sending at significant scale (100,000+ per month), use a more detailed subdomain structure:
 
 - mail.yourbrand.com for marketing campaigns
 - news.yourbrand.com for newsletters
@@ -695,7 +695,7 @@ Yahoo/AOL tend to be more aggressive about rate limiting during warming. They're
 
 ### Domain Reputation Monitoring Tools
 
-You can't fix what you can't see. Here are the tools I'd suggest for monitoring your sending reputation.
+You can't fix what you can't see. Here are the tools worth using for monitoring your sending reputation.
 
 **Google Postmaster Tools** is free and essential. It requires DNS verification to set up and needs a minimum of 200 to 500 messages per day to Gmail recipients to generate usable data. It shows your domain reputation status, spam rate, authentication success rates, and encryption percentage.
 
@@ -765,7 +765,7 @@ Not everything is worth testing. Focus your testing effort on changes that will 
 
 **Email length.** Test a 100-word email against a 400-word email with the same offer and CTA. You may find that shorter emails produce higher click rates (less to read before the CTA) or that longer emails produce higher conversion rates (more context builds more desire). The answer depends on your audience, your offer, and the complexity of what you're selling. Simple products tend to benefit from shorter copy. Complex, high-consideration purchases tend to benefit from more detail.
 
-**Testing priority framework:** I'd suggest ranking potential tests by two factors: expected impact (how much could this improve results?) and compounding effect (how many future sends will benefit?). Tests with both high impact and high compounding should always be prioritised. Sender name, CTA format, and email template structure top that list. Subject line tests have high impact but low compounding since each subject line is unique.
+**Testing priority framework:** Rank potential tests by two factors: expected impact (how much could this improve results?) and compounding effect (how many future sends will benefit?). Tests with both high impact and high compounding should always be prioritised. Sender name, CTA format, and email template structure top that list. Subject line tests have high impact but low compounding since each subject line is unique.
 
 ### Statistical Significance
 
@@ -789,7 +789,7 @@ For revenue-based tests, let the test run for a full day to achieve 90% accuracy
 
 **Always send both test versions at the same time on the same day.** Sending version A on Tuesday and version B on Wednesday doesn't test your variable. It tests the day of the week.
 
-**Use a significance calculator.** Don't eyeball it. Tools like VWO's A/B test significance calculator, Evan Miller's calculator, or your ESP's built-in significance indicator will tell you whether your result is statistically reliable. Most calculators use a 95% confidence level, meaning there's only a 5% chance the observed difference is due to random chance. I'd suggest not declaring a winner below 95% confidence.
+**Use a significance calculator.** Don't eyeball it. Tools like VWO's A/B test significance calculator, Evan Miller's calculator, or your ESP's built-in significance indicator will tell you whether your result is statistically reliable. Most calculators use a 95% confidence level, meaning there's only a 5% chance the observed difference is due to random chance. Don't declare a winner below 95% confidence.
 
 **Bayesian vs frequentist testing.** Some platforms (including Klaviyo and Optimizely) use Bayesian statistics rather than traditional frequentist methods. Bayesian testing gives you a probability that one version is better than the other (e.g., "Version A has a 92% probability of being the winner"), which many people find more intuitive than p-values and confidence intervals. Either approach is valid. What matters is that you use one of them rather than guessing.
 
@@ -827,7 +827,7 @@ Testing without a system is just random experimentation. You need a process.
 
 **Document everything in a testing log.** At minimum, record: what you tested, the hypothesis, sample sizes for each variant, results with confidence level, the date, and what you decided to implement. Over time, this log becomes one of the most valuable assets in your email programme. It prevents you from re-testing things you've already tested, and it reveals patterns across tests that individual results might miss.
 
-### Send Time Optimisation Deep Dive
+### Send Time Optimisation
 
 Send Time Optimisation (STO) uses data about each subscriber's past engagement to predict the optimal time to deliver each email. Instead of blasting your entire list at 10am on Tuesday, STO queues each email for the moment that specific subscriber is most likely to engage.
 
@@ -883,7 +883,7 @@ The most successful email programmes I've worked with share a common trait: they
 
 This means documenting test results where the team can find them. It means celebrating negative results (learning that something doesn't work is valuable). It means allocating time and sends specifically for testing rather than filling every slot with revenue-focused campaigns.
 
-I'd suggest dedicating at least 20% of your campaign sends to testing something. Not every test will produce a winner. But over the course of a year, the wins that do emerge will compound into a programme that performs meaningfully better than where you started.
+Dedicate at least 20% of your campaign sends to testing something. Not every test will produce a winner. But over the course of a year, the wins that do emerge will compound into a programme that performs meaningfully better than where you started.
 
 **Share test results across teams.** Your email testing insights don't exist in a vacuum. A subject line test that reveals your audience responds better to negative framing has implications for your ad copy, your landing page headlines, and your product messaging. A CTA test that shows first-person copy outperforms second-person applies everywhere you're writing calls to action. email testing is often the fastest, cheapest way to learn about your audience's preferences because the feedback loop is so tight.
 
