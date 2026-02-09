@@ -113,6 +113,11 @@ Research topics covered:
    - Added: industry benchmarks, frequency guide, key thresholds as appendix tables
    - Removed: fake API section, generic filler, repetitive content from v2
    - 40 experts grouped by specialty in compact directory
+6. **Publish & Distribute** — Pushed everything to GitHub. Key additions:
+   - Created README.md with chapter overview, two usage modes, and installation instructions
+   - Added SKILL.md to repo (was only at `~/.claude/skills/` before)
+   - Added missing repo link to Part 4 closing
+   - All commits pushed to `origin/main`
 
 ---
 
@@ -122,7 +127,9 @@ See `plan.md` for the detailed roadmap. Summary:
 
 1. ~~**EMB v4 Expert Edit**~~ ✅ Complete
 2. ~~**EMB Skill File**~~ ✅ Complete
-3. **🔜 Publish & Distribute** — Push to GitHub, update README.
+3. ~~**Publish & Distribute**~~ ✅ Complete
+
+**All planned steps are complete.**
 
 ---
 
