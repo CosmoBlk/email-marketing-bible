@@ -823,4 +823,4 @@ The research methodology and crawler code are open-source and available for revi
 
 Built by George Hartley. Contributions and corrections welcome via GitHub.
 
-If you found this useful, the companion Claude Code skill turns this knowledge into an actionable AI assistant for your specific brand.
+If you found this useful, the companion Claude Code skill turns this knowledge into an actionable AI assistant for your specific brand. Install it from [github.com/CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible).
