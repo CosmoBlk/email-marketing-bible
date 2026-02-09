@@ -5,7 +5,7 @@
 
 ---
 
-## Status: Step 2 Complete → Step 3 Next
+## Status: Step 3 Complete → Step 4 Next
 
 ---
 
@@ -70,23 +70,32 @@ The document was compiled across many sessions. George's voice is direct, practi
 
 ---
 
-## Step 3: Create EMB Skill File 🔜 NEXT
+## Step 3: Create EMB Skill File ✅ COMPLETE
 
-After the edit is complete, convert the final EMB v4 into a Claude Code `SKILL.md` file.
+Converted the edited EMB v4 into a Claude Code `SKILL.md` file.
 
-The skill file should:
+### The Brief
+
 - Contain the full knowledge base in a format optimised for Claude consumption
 - Enable Claude to act as an email marketing co-pilot
 - Support tasks: analyse setups, identify gaps, draft copy, build automation flows, pull benchmarks
 - Be installable via the instructions in the EMB intro
 - Live at the existing repo: [github.com/CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible)
 
-### Reference
-- Current skill description from system prompt: "Comprehensive email marketing knowledge base compiled from research across 4798 insights and 908 sources. Covers strategy, segmentation, automation, deliverability, benchmarks, and segment-specific playbooks."
+### Results
+
+- Complete rewrite from v2 (1,160 lines of unstructured bullet dumps) to v4 (824 lines, structured for retrieval)
+- Distilled 55K words of EMB v4 into a dense skill reference covering all 16 chapters + appendices
+- 15 structured sections: Fundamentals, List Building, Segmentation & Personalisation, Automation Flows, Copywriting, Design & Technical, Deliverability, Testing & Optimisation, Analytics & Measurement, Compliance, Industry Playbooks (19 industries), Platform Selection, Cold Email, AI & Email, Case Study Patterns
+- Key data tables, benchmark numbers, framework summaries, decision trees retained
+- Appendix with benchmarks by industry, by email type, ROI by channel, key thresholds, frequency guide
+- Expert Directory: 40 practitioners grouped by specialty
+- Removed fake API section and generic filler from v2
+- File: `~/.claude/skills/email-marketing-bible/SKILL.md`
 
 ---
 
-## Step 4: Publish & Distribute
+## Step 4: Publish & Distribute 🔜 NEXT
 
 - Push final EMB v4 document to GitHub
 - Push skill file to GitHub

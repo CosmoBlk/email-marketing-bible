@@ -22,6 +22,10 @@
 
 ## Current State (as of 9 Feb 2026)
 
+### EMB Skill File — COMPLETE ✅
+
+Complete rewrite of the Claude Code skill file from v2 (1,160 lines, unstructured) to v4 (824 lines, structured for retrieval). Distilled 55K words of EMB v4 into a dense skill reference. File: `~/.claude/skills/email-marketing-bible/SKILL.md`
+
 ### EMB v4 Document — EDITED ✅
 
 Expert edit complete. All 16 chapters + 4 appendices across 4 files:
@@ -102,6 +106,13 @@ Research topics covered:
    - Condensed Expert Directory (Ch 16) from ~2K words of individual bios to ~500 words grouped by specialty
    - Trimmed platform write-ups (Ch 12) after comparison table
    - General tightening throughout: cut filler, redundancy, repetitive closings
+5. **EMB Skill File** — Complete rewrite of SKILL.md from v2 to v4. Key changes:
+   - Rewrote from 1,160 lines of unstructured bullet dumps to 824 lines structured for Claude retrieval
+   - Distilled all 16 chapters + appendices into 15 dense sections with tables, frameworks, and decision trees
+   - Added: Cold Email, AI & Email, Platform Selection, Case Study Patterns (all new in v4)
+   - Added: industry benchmarks, frequency guide, key thresholds as appendix tables
+   - Removed: fake API section, generic filler, repetitive content from v2
+   - 40 experts grouped by specialty in compact directory
 
 ---
 
@@ -110,8 +121,8 @@ Research topics covered:
 See `plan.md` for the detailed roadmap. Summary:
 
 1. ~~**EMB v4 Expert Edit**~~ ✅ Complete
-2. **🔜 EMB Skill File** — Convert the edited EMB v4 into a Claude Code SKILL.md file that can be installed and used as an AI email marketing co-pilot.
-3. **Publish & Distribute** — Push to GitHub, update README.
+2. ~~**EMB Skill File**~~ ✅ Complete
+3. **🔜 Publish & Distribute** — Push to GitHub, update README.
 
 ---
 
@@ -138,4 +149,7 @@ See `plan.md` for the detailed roadmap. Summary:
     ├── EMB_v4_part2.md  (Ch 5–8)
     ├── EMB_v4_part3.md  (Ch 9–11)
     └── EMB_v4_part4.md  (Ch 12–16, Appendices)
+
+~/.claude/skills/email-marketing-bible/
+└── SKILL.md           ← EMB v4 skill file (824 lines, structured for Claude)
 ```
