@@ -6,7 +6,7 @@ For every dollar you spend on email marketing, you get thirty-six back. That's n
 
 I built SmartrMail (email marketing SaaS for ecommerce, 28,000 customers) and spent years watching what actually works across thousands of brands. I've seen patterns repeat across industries: the same mistakes destroying the same campaigns, the same strategies quietly generating the same outsized returns. This guide is the result of crawling 908 sources, extracting 4,798 insights, and distilling them into something you can actually use. Every claim is backed by data, every recommendation tested by practitioners.
 
-This is version four. Since v3, I've added a cold email chapter, a thorough section on spam traps, a full chapter on AI and email, company case studies throughout, and a sending identity guide. The fundamentals haven't changed, but the industry has shifted enough that every chapter needed updating.
+This is v0.4 — the first public release. I've added a cold email chapter, a thorough section on spam traps, a full chapter on AI and email, company case studies throughout, and a sending identity guide. The fundamentals haven't changed, but the industry has shifted enough that every chapter needed updating.
 
 ---
 
@@ -33,7 +33,7 @@ Forty of the world's best email marketing practitioners are referenced throughou
 
 The research behind this guide comes from 908 sources across industry reports (Litmus, Klaviyo, Campaign Monitor, HubSpot, Salesforce), practitioner blogs, academic research, platform documentation, and community discussions from Reddit, HubSpot Community, and industry forums. Where multiple sources reported conflicting numbers, I used the most commonly cited figure or the one from the most authoritative source.
 
-### What's new in v4
+### What's new in v0.4
 
 **Cold email chapter.** Cold outreach and email marketing are fundamentally different disciplines with different infrastructure, legal requirements, and strategies. The new Chapter 13 covers cold email properly for the first time, because too many people are blowing up their marketing domain by running cold campaigns from it.
 

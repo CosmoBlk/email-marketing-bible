@@ -1,12 +1,12 @@
 ---
 name: email-marketing-bible
 description: >
-  The Email Marketing Bible v4 — comprehensive, data-backed email marketing
+  The Email Marketing Bible v0.4 — comprehensive, data-backed email marketing
   knowledge base by George Hartley (SmartrMail, 28K customers). Built from
   908 sources and 4,798 insights. Covers strategy, flows, deliverability,
   copywriting, segmentation, compliance, cold email, AI, platform selection,
   and 19 industry playbooks. Updated February 2026.
-version: 4
+version: 0.4
 topics:
   - email marketing
   - campaign strategy
@@ -22,9 +22,9 @@ topics:
   - industry playbooks
 ---
 
-# Email Marketing Bible v4 — Skill Reference
+# Email Marketing Bible v0.4 — Skill Reference
 
-> Source: EMB v4 (~55K words, 16 chapters, 4 appendices). George Hartley, Feb 2026.
+> Source: EMB v0.4 (~55K words, 16 chapters, 4 appendices). George Hartley, Feb 2026.
 > Use this skill to: analyse email setups, identify gaps, draft copy, build automation flows, pull benchmarks, troubleshoot deliverability, and advise on platform selection.
 
 ---

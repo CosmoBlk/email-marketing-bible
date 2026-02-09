@@ -1,4 +1,4 @@
-# Email Marketing Bible v4: Chapters 5-8
+# Email Marketing Bible v0.4: Chapters 5-8
 
 ---
 

@@ -1,4 +1,4 @@
-# Email Marketing Bible v4: Chapters 9-11
+# Email Marketing Bible v0.4: Chapters 9-11
 
 ---
 
@@ -498,4 +498,4 @@ For sellers, the 'weekly performance summary' (views, inquiries, conversion rate
 
 ---
 
-*End of Chapters 9-11. The Email Marketing Bible v4 continues in subsequent sections.*
+*End of Chapters 9-11. The Email Marketing Bible v0.4 continues in subsequent sections.*

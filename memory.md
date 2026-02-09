@@ -147,6 +147,9 @@ See `plan.md` for the detailed roadmap. Summary:
   2. Use traction to launch AI-native email SaaS
   3. Build AI-native SaaS brains on top of EMB
 - **Website domain:** emailmarketingskill.com (registered). Separate repo from EMB.
+- **Version naming:** Public-facing version is v0.4 (first public release). Internal project files may still reference "v4" historically — the public label is what matters.
+- **License:** Changed from "All rights reserved" to MIT for open-source distribution.
+- **GitHub repo:** Now public with topics for discoverability (email-marketing, claude-code, ai-skill, agent-skills, etc.).
 
 ---
 

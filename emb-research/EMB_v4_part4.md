@@ -1,4 +1,4 @@
-# Email Marketing Bible v4: Chapters 12-16 and Appendices
+# Email Marketing Bible v0.4: Chapters 12-16 and Appendices
 
 ---
 
