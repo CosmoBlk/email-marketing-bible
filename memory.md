@@ -118,6 +118,8 @@ Research topics covered:
    - Added SKILL.md to repo (was only at `~/.claude/skills/` before)
    - Added missing repo link to Part 4 closing
    - All commits pushed to `origin/main`
+7. **Repo made public** — `email-marketing-bible` repo changed from private to public for open-source distribution
+8. **Website planning** — emailmarketingskill.com planned using Astro Starlight (landing page + wiki). Separate repo. Resend for email capture. Design prompt created for Google AI Studio.
 
 ---
 
@@ -128,8 +130,7 @@ See `plan.md` for the detailed roadmap. Summary:
 1. ~~**EMB v4 Expert Edit**~~ ✅ Complete
 2. ~~**EMB Skill File**~~ ✅ Complete
 3. ~~**Publish & Distribute**~~ ✅ Complete
-
-**All planned steps are complete.**
+4. **🔜 Build emailmarketingskill.com** — Astro Starlight site with landing page + searchable wiki. Separate repo. Resend for email capture. Deploys to Vercel.
 
 ---
 
@@ -138,9 +139,14 @@ See `plan.md` for the detailed roadmap. Summary:
 - **George's voice:** Direct, practical, data-driven. Australian English. No fluff. Speaks from experience (SmartrMail, 28K customers). See the george-tone skill for reference.
 - **Document philosophy:** Every claim backed by data. Every recommendation tested by practitioners. Specific things you can implement this week.
 - **40 experts referenced** throughout — full directory in Chapter 16.
-- **Open source:** Research crawler at [github.com/CosmoBlk/emb-research](https://github.com/CosmoBlk/emb-research)
+- **Open source:** EMB repo now public at [github.com/CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible). Research crawler at [github.com/CosmoBlk/emb-research](https://github.com/CosmoBlk/emb-research)
 - **Target format:** Both standalone reading AND Claude Code skill consumption.
 - **Edit reduced word count** — 59K → 55K. Cuts focused on duplicates, niche industry playbooks, verbose platform write-ups, and expert directory bios. The core instructional content is preserved.
+- **Strategic goals (internal, not public):**
+  1. Build traction in vibe hacker / AI GTM space with open-source skill
+  2. Use traction to launch AI-native email SaaS
+  3. Build AI-native SaaS brains on top of EMB
+- **Website domain:** emailmarketingskill.com (registered). Separate repo from EMB.
 
 ---
 

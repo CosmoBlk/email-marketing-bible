@@ -5,7 +5,7 @@
 
 ---
 
-## Status: All Steps Complete ✅
+## Status: Step 5 In Progress
 
 ---
 
@@ -102,7 +102,47 @@ Converted the edited EMB v4 into a Claude Code `SKILL.md` file.
 - ✅ Created README.md with chapter overview, installation instructions, and two usage modes
 - ✅ Added missing repo link to Part 4 closing
 - ✅ All 3 commits pushed to `origin/main`
-- Repo: [github.com/CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible) (private)
+- Repo: [github.com/CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible) (now public)
+
+---
+
+## Step 5: Build emailmarketingskill.com 🔜 IN PROGRESS
+
+### Goals
+
+Build a website at emailmarketingskill.com that serves as:
+1. **Landing page** — SEO-optimised for "Email Marketing Skill for Claude Code". Dark terminal aesthetic (modeled on marketing-skills.com). Install command, GitHub link, expert social proof, email capture for PDF download.
+2. **Searchable wiki** — The full 55K-word EMB hosted as a browsable, searchable reference with sidebar navigation.
+
+### Framework
+
+**Astro Starlight** — splash template for landing page, doc template for wiki, built-in Pagefind search, markdown-native, deploys to Vercel.
+
+### Key Features
+
+- Terminal install command with copy button
+- GitHub repo link (now public)
+- Twitter link to @GTHartley
+- Email capture via Resend → sends PDF download link, subscribers get EMB update notifications
+- All 19 industry playbooks highlighted
+- 8 featured experts with specialty + company
+- Full chapter navigation with search
+- Dark-mode-only, monospace/terminal aesthetic
+
+### Separate Repo
+
+New repo: `CosmoBlk/emailmarketingskill.com`
+
+### Status
+
+- ✅ GitHub repo made public
+- ✅ Plan written (see `~/.claude/plans/purring-imagining-swan.md`)
+- 🔜 Landing page design (Google AI Studio prompt)
+- ⬜ Scaffold Astro Starlight project
+- ⬜ Split EMB content into chapter files
+- ⬜ Build landing page components
+- ⬜ Build Resend email capture
+- ⬜ Deploy to Vercel
 
 ---
 
