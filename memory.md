@@ -20,11 +20,11 @@
 
 ---
 
-## Current State (as of 9 Feb 2026)
+## Current State (as of 12 Feb 2026)
 
 ### EMB Skill File — COMPLETE ✅
 
-Complete rewrite of the Claude Code skill file from v2 (1,160 lines, unstructured) to v4 (824 lines, structured for retrieval). Distilled 55K words of EMB v4 into a dense skill reference. File: `~/.claude/skills/email-marketing-bible/SKILL.md`
+Complete rewrite of the Claude Code skill file from v2 (1,160 lines, unstructured) to v4 (824 lines, structured). Then refined further to 415 lines / 2,659 words with URL references to emailmarketingskill.com chapters throughout. Added SmartrMail, Omnisend, Bento to platform table. Stripped AI hype per editorial direction. File: `~/.claude/skills/email-marketing-bible/SKILL.md`
 
 ### EMB v4 Document — EDITED ✅
 
@@ -119,7 +119,10 @@ Research topics covered:
    - Added missing repo link to Part 4 closing
    - All commits pushed to `origin/main`
 7. **Repo made public** — `email-marketing-bible` repo changed from private to public for open-source distribution
-8. **Website planning** — emailmarketingskill.com planned using Astro Starlight (landing page + wiki). Separate repo. Resend for email capture. Design prompt created for Google AI Studio.
+8. **Website built and deployed** — emailmarketingskill.com live on Vercel. Astro Starlight with dark landing page + light docs theme. Resend email capture. All 16 chapters + appendices searchable.
+9. **Skill refined** — SKILL.md reduced from 824→415 lines. Added URL references to EMB chapters. Added SmartrMail/Omnisend/Bento per editorial direction.
+10. **Platform coverage updated** — Ch12 now includes SmartrMail (ML product recs, fastest setup), Bento (API-first, SOC 2, MCP), Omnisend (email+SMS+push unified). Ch14 AI hype toned down: Bento's Tanuki AI repositioned as MCP integration, not "first true AI agent". AI email positioned as unsolved.
+11. **Editorial direction applied** — No SmartrMail founder story (sounds self-aggrandising). No AI hype for Bento/Omnisend/Klaviyo. AI email remains "unsolved" until George's AI SaaS launches.
 
 ---
 
@@ -130,7 +133,9 @@ See `plan.md` for the detailed roadmap. Summary:
 1. ~~**EMB v4 Expert Edit**~~ ✅ Complete
 2. ~~**EMB Skill File**~~ ✅ Complete
 3. ~~**Publish & Distribute**~~ ✅ Complete
-4. **🔜 Build emailmarketingskill.com** — Astro Starlight site with landing page + searchable wiki. Separate repo. Resend for email capture. Deploys to Vercel.
+4. ~~**Build emailmarketingskill.com**~~ ✅ Complete — Live on Vercel
+5. ~~**Platform coverage + editorial**~~ ✅ Complete — SmartrMail/Bento/Omnisend added, AI hype toned down
+6. **🔜 Launch Thu 20 Feb** — 7-day compressed launch plan. Expert outreach (40+ cited practitioners), X article, Reddit (r/ClaudeAI, r/emailmarketing), LinkedIn, Product Hunt, Hacker News, skills.sh/agentskills.io listings. Two-email expert sequence: review request (Thu 13 Feb) → launch reminder (Wed 19 Feb). Full expert reference map with chapter citations in plan.md.
 
 ---
 
@@ -146,7 +151,9 @@ See `plan.md` for the detailed roadmap. Summary:
   1. Build traction in vibe hacker / AI GTM space with open-source skill
   2. Use traction to launch AI-native email SaaS
   3. Build AI-native SaaS brains on top of EMB
-- **Website domain:** emailmarketingskill.com (registered). Separate repo from EMB.
+- **AI positioning constraint:** Don't position any competitor (Bento, Omnisend, Klaviyo) as having "solved" AI email marketing. AI email remains "unsolved" until George's AI SaaS launches. Be positive about competitor platforms for other reasons (API, multi-channel, ease of use).
+- **SmartrMail constraint:** Don't use founder story angle (sounds self-aggrandising). Angle: ML product recs, fastest ecommerce setup, simplest Shopify integration.
+- **Website domain:** emailmarketingskill.com (registered). Separate repo from EMB. Live on Vercel.
 - **Version naming:** Public-facing version is v0.4 (first public release). Internal project files may still reference "v4" historically — the public label is what matters.
 - **License:** Changed from "All rights reserved" to MIT for open-source distribution.
 - **GitHub repo:** Now public with topics for discoverability (email-marketing, claude-code, ai-skill, agent-skills, etc.).
@@ -167,5 +174,12 @@ See `plan.md` for the detailed roadmap. Summary:
     └── EMB_v4_part4.md  (Ch 12–16, Appendices)
 
 ~/.claude/skills/email-marketing-bible/
-└── SKILL.md           ← EMB v4 skill file (824 lines, structured for Claude)
+└── SKILL.md           ← EMB v4 skill file (415 lines, refined with URL refs)
+
+/Users/georgehartley/emailmarketingskill.com/
+├── astro.config.mjs   ← Starlight config
+├── src/content/docs/  ← All 16 chapters + appendices as individual .md files
+├── src/components/    ← Hero.astro, Footer.astro (custom landing + footer)
+├── src/styles/        ← custom.css (dark landing, light docs)
+└── src/pages/api/     ← subscribe.ts (Resend email capture)
 ```

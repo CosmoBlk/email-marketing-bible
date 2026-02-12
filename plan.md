@@ -5,7 +5,7 @@
 
 ---
 
-## Status: Step 5 In Progress
+## Status: Step 6 In Progress — Launch Thu 20 Feb
 
 ---
 
@@ -106,48 +106,202 @@ Converted the edited EMB v4 into a Claude Code `SKILL.md` file.
 
 ---
 
-## Step 5: Build emailmarketingskill.com 🔜 IN PROGRESS
+## Step 5: Build emailmarketingskill.com ✅ COMPLETE
 
 ### Goals
 
 Build a website at emailmarketingskill.com that serves as:
-1. **Landing page** — SEO-optimised for "Email Marketing Skill for Claude Code". Dark terminal aesthetic (modeled on marketing-skills.com). Install command, GitHub link, expert social proof, email capture for PDF download.
+1. **Landing page** — SEO-optimised for "Email Marketing Skill for Claude Code". Dark terminal aesthetic with light docs. Install command, GitHub link, expert social proof, email capture for PDF download.
 2. **Searchable wiki** — The full 55K-word EMB hosted as a browsable, searchable reference with sidebar navigation.
 
 ### Framework
 
 **Astro Starlight** — splash template for landing page, doc template for wiki, built-in Pagefind search, markdown-native, deploys to Vercel.
 
-### Key Features
-
-- Terminal install command with copy button
-- GitHub repo link (now public)
-- Twitter link to @GTHartley
-- Email capture via Resend → sends PDF download link, subscribers get EMB update notifications
-- All 19 industry playbooks highlighted
-- 8 featured experts with specialty + company
-- Full chapter navigation with search
-- Dark-mode-only, monospace/terminal aesthetic
-
 ### Separate Repo
 
-New repo: `CosmoBlk/emailmarketingskill.com`
+`CosmoBlk/emailmarketingskill.com`
 
 ### Status
 
-- ✅ GitHub repo made public
-- ✅ Plan written (see `~/.claude/plans/purring-imagining-swan.md`)
-- 🔜 Landing page design (Google AI Studio prompt)
-- ⬜ Scaffold Astro Starlight project
-- ⬜ Split EMB content into chapter files
-- ⬜ Build landing page components
-- ⬜ Build Resend email capture
-- ⬜ Deploy to Vercel
+- ✅ Site live at emailmarketingskill.com (Vercel)
+- ✅ Dark landing page + light GitHub-style docs
+- ✅ All 16 chapters + 4 appendices as individual pages with sidebar navigation
+- ✅ Pagefind search across all content
+- ✅ Resend email capture (landing page + doc page footers)
+- ✅ Custom Hero.astro (terminal install, GitHub link, expert grid, chapter list)
+- ✅ Custom Footer.astro (author credits, Twitter, GitHub)
+- ✅ Platform coverage updated: SmartrMail, Bento, Omnisend added to Ch12
+- ✅ AI hype toned down in Ch14 per editorial direction
+- ✅ SKILL.md refined (415 lines, URL references to EMB chapters)
+- ✅ Miscapitalisation scan: clean throughout
+
+---
+
+## Step 6: Launch — Thu 20 Feb 2026 🔜 IN PROGRESS
+
+### Goals
+
+Compressed 7-day launch plan. Maximum reach through expert network + organic channels. Target audience: AI builders, email marketers, Claude Code users.
+
+### Launch Timeline
+
+**Thu 13 Feb — Expert Outreach (Round 1: Review Request)**
+- ⬜ Draft personalised emails to all 40 experts cited in EMB Ch16 (use Expert Reference Map below)
+- ⬜ Each email includes: specific chapter + line where they're quoted, link to their section on emailmarketingskill.com
+- ⬜ Ask 1: Review the section where you're cited — does this look right?
+- ⬜ Ask 2: Try the skill on a real task and share feedback before Thursday launch
+- ⬜ Send all outreach emails
+
+**Mon 17 Feb — Directory Listings**
+- ⬜ Submit to skills.sh
+- ⬜ Submit to agentskills.io
+- ⬜ Submit to Awesome Claude Code lists on GitHub
+- ⬜ Check for Claude Code community / Anthropic Discord channels
+
+**Tue 18 Feb — Content Prep**
+- ⬜ Draft X/Twitter long-form article (George's voice, data-driven, operator angle)
+- ⬜ Draft Reddit post for r/ClaudeAI ("I built this, here's what I learned" angle)
+- ⬜ Draft Reddit post for r/emailmarketing (practitioner angle)
+- ⬜ Draft LinkedIn post (shorter, professional audience)
+- ⬜ Prep Product Hunt listing page + maker comment (launch same day or following week)
+- ⬜ Draft Hacker News "Show HN" post (open-source + 908-source methodology angle)
+
+**Wed 19 Feb — Expert Outreach (Round 2: Launch Reminder)**
+- ⬜ Send follow-up emails to expert list
+- ⬜ Include X article link (pre-published or preview)
+- ⬜ Ask them to share/comment when it goes live Thursday
+- ⬜ Give them a specific share prompt or suggested post
+
+**Thu 20 Feb — LAUNCH DAY**
+- ⬜ Publish X article (morning)
+- ⬜ Post to Reddit r/ClaudeAI
+- ⬜ Post to Reddit r/emailmarketing
+- ⬜ Post to LinkedIn
+- ⬜ Launch on Product Hunt (if prepped, otherwise following week)
+- ⬜ Submit to Hacker News ("Show HN")
+- ⬜ Email experts with live links — ask for shares
+- ⬜ Monitor and engage with comments/replies all day
+
+### Expert Outreach Email Structure
+
+**Email 1 (Thu 13 Feb — TOMORROW'S TASK):**
+- Subject: "You're cited in the Email Marketing Bible — quick review?"
+- Body: Personal intro, explain EMB + Claude Code skill, link to their specific section, ask for review + skill feedback
+- Include: direct link to emailmarketingskill.com/[chapter], specific quote/line
+- Tone: George's voice — direct, respectful, not salesy. Operator-to-operator.
+
+**Email 2 (Wed 19 Feb):**
+- Subject: "Launching tomorrow — would love your support"
+- Body: Remind them of the skill, link to X article, suggest a share/quote-tweet, thank them for any feedback from email 1
+
+### Expert Reference Map (for Email 1 personalisation)
+
+Each expert below is listed with their chapter citations and the URL slug for their section on emailmarketingskill.com. The email should link to the most substantive mention (not just the Ch16 directory listing).
+
+**Strategy:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Chad S. White | "Head of Research at Oracle... author of Email Marketing Rules" | Ch1 | /01-fundamentals |
+| Kath Pay | "founder of Holistic Email Marketing, 26+ years" | Ch1 | /01-fundamentals |
+| Jay Schwedelson | "over-contacting is one of the biggest destroyers of email performance" | Ch3 | /03-segmentation-and-personalisation |
+| Jeanne Jennings | Systematic testing approach | Ch8 | /08-testing-and-optimisation |
+| Dela Quist | Ch16 directory only | Ch16 | /16-expert-directory |
+| Ann Handley | "respecting audience data isn't just a legal obligation, it's a competitive advantage" | Ch10 | /10-compliance-and-privacy |
+| Ryan Phelan | "focus on incrementality" | Ch9 | /09-analytics-and-measurement |
+
+**Platform Builders:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Nathan Barry | "founder of Kit, formerly ConvertKit" | Ch2 | /02-building-your-list |
+| Tyler Denk | "employee number two at Morning Brew" + beehiiv founding story | Ch15 | /15-company-case-studies |
+| Jimmy Kim | "recommends running both platforms in parallel for 2-4 weeks during migration" | Ch12 | /12-choosing-your-platform |
+| Brennan Dunn | Self-identification technique for welcome emails | Ch4 | /04-the-emails-that-make-money |
+
+**Copywriting:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Joanna Wiebe | "coined the term 'conversion copywriting'" | Ch1 | /01-fundamentals |
+| Laura Belgray | "read like a person, not a brand" | Ch5 | /05-copywriting-that-converts |
+| Ben Settle | Daily email approach, unconventional subject lines | Ch5 | /05-copywriting-that-converts |
+| Chris Orzechowski | "CTA should be the natural conclusion of your email's argument" | Ch5 | /05-copywriting-that-converts |
+| Samar Owais | "making the offer feel like a natural next step rather than a hard pivot" | Ch4 | /04-the-emails-that-make-money |
+| Tarzan Kay | Ch16 directory only | Ch16 | /16-expert-directory |
+
+**Deliverability:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Matthew Vernhout | "strongest advocates for DMARC adoption" | Ch7 | /07-deliverability |
+| Troy Ericson | "'Email Paramedic' approach" | Ch7 | /07-deliverability |
+| Lauren Meyer | Ch16 directory only | Ch16 | /16-expert-directory |
+
+**Design and Technical:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Mark Robbins | "pioneered CSS-only techniques for email" | Ch6 | /06-design-and-technical |
+| Paul Airy | "leading voice on email accessibility" | Ch6 | /06-design-and-technical |
+| Justin Khoo | Ch16 directory only | Ch16 | /16-expert-directory |
+| Jason Rodriguez | Progressive enhancement champion | Ch6 | /06-design-and-technical |
+
+**Ecommerce and Retention:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Chase Dimond | "$200M+ in email revenue" + revenue attribution framework | Ch4 | /04-the-emails-that-make-money |
+| Val Geisler | "behaviour-based onboarding" distinction | Ch4 | /04-the-emails-that-make-money |
+| Reinis Krumins | Engagement-based sending for DTC | Ch11 | /11-industry-playbooks |
+| Danavir Sarria | Ch16 directory only | Ch16 | /16-expert-directory |
+
+**Agency:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Scott Cohen | "tracking metrics per client vertical" | Ch11 | /11-industry-playbooks |
+| Garin Hobbs | Ch16 directory only | Ch16 | /16-expert-directory |
+
+**Newsletter Growth:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Dan Oshinsky | "first 100 subscribers are the hardest" | Ch11 | /11-industry-playbooks |
+| Matt McGarry | "first 100 subscribers are the hardest" | Ch11 | /11-industry-playbooks |
+| Liz Wilcox | "community of over 4,000 email marketing enthusiasts" | Ch2 | /02-building-your-list |
+
+**Consultants:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Ian Brodie | "teach, don't pitch" principle | Ch11 | /11-industry-playbooks |
+| Jordie van Rijn | "don't just compare features on paper. Get demos." | Ch12 | /12-choosing-your-platform |
+| Eman Ismail | Ch16 directory only | Ch16 | /16-expert-directory |
+| Andrew Kordek | Ch16 directory only | Ch16 | /16-expert-directory |
+
+**Content Creators:**
+| Expert | Best Citation | Chapter | URL |
+|--------|--------------|---------|-----|
+| Alex Cattoni | Ch16 directory only | Ch16 | /16-expert-directory |
+| Noah Kagan | "Law of 100" for list building | Ch2 | /02-building-your-list |
+| Gavin Laugenie | Quarterly testing plans tied to business questions | Ch8 | /08-testing-and-optimisation |
+
+**Note:** Experts with "Ch16 directory only" (Dela Quist, Tarzan Kay, Lauren Meyer, Justin Khoo, Danavir Sarria, Garin Hobbs, Eman Ismail, Andrew Kordek, Alex Cattoni) are listed in the Expert Directory but don't have deep chapter citations. The email for these experts should reference their directory listing and their area of expertise, and still ask for review + skill feedback.
+
+### Channels Summary
+
+| Channel | Audience | Angle |
+|---------|----------|-------|
+| Expert outreach | 40+ email practitioners with audiences | Personal, review-based |
+| X/Twitter article | AI builders, vibe coders | Long-form, data-driven |
+| r/ClaudeAI | Claude Code users | "I built this" story |
+| r/emailmarketing | Email practitioners | Practitioner value |
+| LinkedIn | Professional marketers | Shorter, professional |
+| Product Hunt | Tech/product community | Product launch |
+| Hacker News | Developers, open-source | Show HN, methodology |
+| skills.sh / agentskills.io | Skill directory users | Listing |
+| Anthropic Discord/community | Claude ecosystem | Direct target |
 
 ---
 
 ## Notes
 
 - The project path is `/Users/georgehartley/AI Email/`
-- All EMB content is in `emb-research/` subdirectory
-- The transcript from the original build session is at: `/Users/georgehartley/.claude/projects/-Users-georgehartley-AI-Email-/92a9017e-c5ec-40d7-94cb-d5635441a5af.jsonl`
+- The website repo is `/Users/georgehartley/emailmarketingskill.com/`
+- All EMB source content is in `emb-research/` subdirectory
+- Chapter markdown files for the website are in `/Users/georgehartley/emailmarketingskill.com/src/content/docs/`
+- Expert directory: `/Users/georgehartley/emailmarketingskill.com/src/content/docs/16-expert-directory.md`
+- The base URL for all chapter links is `https://emailmarketingskill.com/`
