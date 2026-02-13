@@ -17,11 +17,10 @@ Every claim is backed by data. Every recommendation has been tested by practitio
 ## Install
 
 ```bash
-git clone https://github.com/CosmoBlk/email-marketing-bible.git
-cp -r email-marketing-bible ~/.claude/skills/email-marketing-bible
+git clone https://github.com/CosmoBlk/email-marketing-bible.git ~/.claude/skills/email-marketing-bible
 ```
 
-That's it. Claude now has access to the full knowledge base.
+That's it. One command. Claude now has access to the full knowledge base.
 
 ## What the skill does
 
@@ -111,17 +110,7 @@ Insights from practitioners including Chad S. White (Oracle), Joanna Wiebe (Copy
 
 ## Read the full guide
 
-The complete 55,000-word Email Marketing Bible lives in `emb-research/`:
-
-```
-emb-research/
-├── EMB_v4_part1.md   (Intro, Chapters 1–4)
-├── EMB_v4_part2.md   (Chapters 5–8)
-├── EMB_v4_part3.md   (Chapters 9–11)
-└── EMB_v4_part4.md   (Chapters 12–16, Appendices)
-```
-
-Or read it online at [emailmarketingskill.com](https://emailmarketingskill.com) (coming soon).
+The complete 55,000-word Email Marketing Bible is available at **[emailmarketingskill.com](https://emailmarketingskill.com)** — searchable, browsable, with all 16 chapters and 4 appendices.
 
 ## Research
 

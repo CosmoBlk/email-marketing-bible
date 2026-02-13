@@ -1,5 +1,24 @@
+# OS
 .DS_Store
 *.swp
 *.swo
 *~
+
+# Env
 .env
+
+# Internal project files (not for public distribution)
+memory.md
+plan.md
+CLAUDE.md
+landing-page-design-prompt.md
+outreach-emails.md
+expert-outreach.csv
+intelligentsend-*.md
+intelligentsend-roadmap.md
+*.docx
+*.rtf
+*.txt
+email-marketing-skill-for-claude-code-AI-studio/
+emb-research/
+.claude/
