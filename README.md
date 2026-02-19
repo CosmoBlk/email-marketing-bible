@@ -2,7 +2,7 @@
 
 The most comprehensive email marketing knowledge base, built for Claude Code.
 
-55,000 words. 908 sources. 4,798 insights. 40 expert contributors. 19 industry playbooks. Distilled into a single skill file that turns Claude into an email marketing expert.
+55,000 words. 908 sources. 4,798 insights. 44 expert contributors. 19 industry playbooks. Distilled into a single skill file that turns Claude into an email marketing expert.
 
 Built by [George Hartley](https://x.com/GTHartley) (founder of SmartrMail — email marketing SaaS, 28,000 customers).
 
@@ -96,7 +96,7 @@ Claude will pull from 55,000 words of research, benchmarks, frameworks, and real
 | 13 | Cold Email & B2B Outbound | Infrastructure, tools, writing, personalisation, follow-up sequences |
 | 14 | AI & the Future of Email | Where AI helps, where it doesn't, practical integration, MCP |
 | 15 | Company Case Studies | How Casper, Morning Brew, Duolingo, Spotify, and 6 others use email |
-| 16 | Expert Directory | 40 practitioners referenced throughout — who to follow and why |
+| 16 | Expert Directory | 44 practitioners referenced throughout — who to follow and why |
 
 ### 19 industry playbooks
 
@@ -104,9 +104,9 @@ Every vertical gets its own playbook with specific tactics, benchmarks, and auto
 
 `Ecommerce DTC` · `SaaS B2B` · `SaaS B2C` · `Newsletter & Creator` · `Agency` · `Nonprofit` · `Healthcare` · `Financial Services` · `Real Estate` · `Travel & Hospitality` · `Education` · `Professional Services` · `Retail` · `Events` · `B2B Manufacturing` · `Restaurant & Food` · `Fitness` · `Media & Publishing` · `Marketplace & Platform`
 
-### 40 expert contributors
+### 44 expert contributors
 
-Insights from practitioners including Chad S. White (Oracle), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson (EmailDeliverability.com), Tyler Denk (beehiiv), Ben Settle (Email Players), and 32 others. Full directory in Chapter 16.
+Insights from practitioners including Chad S. White (Oracle), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson (EmailDeliverability.com), Tyler Denk (beehiiv), Ben Settle (Email Players), and 36 others. Full directory in Chapter 16.
 
 ## Read the full guide
 
