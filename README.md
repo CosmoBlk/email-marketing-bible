@@ -2,7 +2,7 @@
 
 The most comprehensive email marketing knowledge base, built for Claude Code.
 
-55,000 words. 908 sources. 4,798 insights. 44 expert contributors. 19 industry playbooks. Distilled into a single skill file that turns Claude into an email marketing expert.
+65,000 words. 908 sources. 4,798 insights. 44 expert contributors. 19 industry playbooks. Distilled into a single skill file that turns Claude into an email marketing expert.
 
 Built by [George Hartley](https://x.com/GTHartley) (founder of SmartrMail — email marketing SaaS, 28,000 customers).
 
@@ -73,7 +73,7 @@ be tracking."
 My brand voice is casual and direct. We sell fitness equipment."
 ```
 
-Claude will pull from 55,000 words of research, benchmarks, frameworks, and real case studies to give you specific, actionable advice — not generic platitudes.
+Claude will pull from 65,000 words of research, benchmarks, frameworks, and real case studies to give you specific, actionable advice — not generic platitudes.
 
 ## What's inside the knowledge base
 
@@ -106,7 +106,7 @@ Every vertical gets its own playbook with specific tactics, benchmarks, and auto
 
 ### 44 expert contributors
 
-Insights from practitioners including Chad S. White (Oracle), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson (EmailDeliverability.com), Tyler Denk (beehiiv), Ben Settle (Email Players), and 36 others. Full directory in Chapter 16.
+Insights from practitioners including Chad S. White (Zeta Global), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson (EmailDeliverability.com), Tyler Denk (beehiiv), Ben Settle (Email Players), and 36 others. Full directory in Chapter 16.
 
 ## Read the full guide
 

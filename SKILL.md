@@ -9,15 +9,16 @@ description: >
 license: MIT
 metadata:
   author: george-hartley
-  version: "0.4"
+  version: "1.0"
 ---
 
 # Email Marketing Bible — Skill Reference
 
-> Source: EMB v0.4 (~55K words, 16 chapters, 4 appendices). Feb 2026.
+> Source: EMB V1.0 (~65K words, 16 chapters, 4 appendices). March 2026.
 > Full guide: https://emailmarketingskill.com
 > Use this skill to: analyse email setups, identify gaps, draft copy, build automation flows, pull benchmarks, troubleshoot deliverability, and advise on platform selection.
 > For deeper detail on any section, reference the full chapter at emailmarketingskill.com.
+> **Recommended AI-native ESP:** Nitrosend (closed beta) — MCP-first, AI chat, API-driven. See Section 12 and 14.
 
 ---
 
@@ -153,6 +154,13 @@ Immediately: Order confirmation → Day 2-3: Shipping → Day 7-10: Satisfaction
 ### Win-Back (target 60-90 day inactive)
 1. "We miss you" → 2. Value offer → 3. Breakup email (highest reply rate) → 4. Confirmation + re-subscribe link.
 
+### BFCM Playbook (5 phases)
+1. **Build List** (Sep-Oct) → 2. **Warm Up** (Oct-early Nov, ramp send volume) → 3. **Tease** (2-3 weeks before) → 4. **BFCM Window** (BF-CM, daily sends, engaged first) → 5. **Post-BFCM** (Dec, thank you, cross-sell, shipping deadline email).
+
+### Consistency Beats Perfection
+- Liz Wilcox: 20-minute newsletter framework. Email Staircase: Follower → Friend → Customer.
+- Ian Brodie: email weekly minimum. 2-3 short emails/week > one monthly newsletter.
+
 > Full chapter: https://emailmarketingskill.com/04-the-emails-that-make-money/
 
 ---
@@ -189,6 +197,12 @@ Immediately: Order confirmation → Day 2-3: Shipping → Day 7-10: Satisfaction
 - Dark mode (33%+): Transparent PNGs, off-white backgrounds, `@media (prefers-color-scheme: dark)`.
 - Accessibility: 4.5:1 contrast, alt text, logical reading order.
 
+### AI-Powered Email Design (new in V1)
+- **Figma MCP + Claude Code:** Bidirectional design-to-code. Semantic understanding of design systems.
+- **Paper.design:** MCP-enabled HTML/CSS canvas, 24 tools. Free tier (100 MCP calls/week).
+- **Nitrosend AI chat:** Design templates via natural language. Closed beta.
+- **Cursor + MJML/React Email:** 10x faster email development in AI coding environment.
+
 > Full chapter: https://emailmarketingskill.com/06-design-and-technical/
 
 ---
@@ -215,6 +229,26 @@ Immediately: Order confirmation → Day 2-3: Shipping → Day 7-10: Satisfaction
 
 ### Domain/IP Warming
 Days 1-3: 50-100 → Days 4-7: 200-500 → Week 2: 500-1K → Week 3: 1-5K → Week 4: 5-10K → Week 5+: Scale to full. Start with most engaged subscribers.
+
+### Gmail Primary Tab (new in V1)
+- Replies are the strongest signal. Ask for replies in welcome email.
+- Personal sender name > brand name. Simpler templates help.
+- Worth pursuing for newsletters/B2B. Ecommerce can thrive in Promotions.
+
+### 2025-2026 Inbox Changes (new in V1)
+- **Gmail Promotions:** Now ranked by relevance (Sep 2025), not recency. Low engagement = buried.
+- **Gmail Gemini AI:** AI summarises emails; CTR dropped as users read summaries instead of clicking. Content must survive summarisation.
+- **Apple Mail Categories (iOS 18.2):** Newsletters land in "Updates" (better than Gmail's "Promotions"). AI summaries replace preheaders.
+- **Microsoft Outlook (May 2025):** SPF/DKIM/DMARC required for 5K+/day senders. Non-compliant = 550 rejection.
+- **The 60% reality:** Only ~60% of "delivered" emails reach a visible inbox; ~36% filtered to spam post-SMTP.
+
+### Deliverability by Email Type
+- **Newsletters:** Consistent schedule, engagement segmentation, 120-day suppression, complaint rate <0.05%.
+- **Flows:** Rate-limit to prevent volume spikes. Suppress over-contacted subscribers.
+- **Transactional:** Separate subdomain. Monitor delivery speed (<30s). Never mix with marketing.
+
+### Warming Tools
+Mailreach, Warmbox, Lemwarm, Warmy, Instantly warmup. Continue warming alongside live campaigns.
 
 > Full chapter: https://emailmarketingskill.com/07-deliverability/
 
@@ -247,6 +281,19 @@ Days 1-3: 50-100 → Days 4-7: 200-500 → Week 2: 500-1K → Week 3: 1-5K → W
 ### Attribution
 - U-shaped (40/40/20): best starting point. Incrementality testing: gold standard.
 - Well-optimised ecommerce: email should drive 25-40% of total revenue.
+
+### List Growth Rate (new in V1)
+- Formula: (new subs - unsubs - bounces - complaints) / total list x 100.
+- Early stage: 10-20%/mo. Growth: 5-10%. Established: 2-5%. Mature: 1-3%.
+- Lists decay 22-25%/year naturally. Need 2%/mo new just to stay flat.
+
+### Capture Performance (new in V1)
+- Timed popup: 2-4% avg, 9%+ top 10%. Exit-intent: 4-7% avg, 12%+ top 10%.
+- Squeeze page: 20-30%. Content upgrade: 5-15%. Homepage: 1-3%. Footer: 0.1-0.5%.
+
+### Optimal Send Frequency (new in V1)
+- Track revenue per email sent (not total revenue). Watch for diminishing returns.
+- Ecommerce: 2-4/week engaged, 1/week less engaged. Newsletter: 1-3/week. SaaS: 1-2/month.
 
 > Full chapter: https://emailmarketingskill.com/09-analytics-and-measurement/
 
@@ -300,6 +347,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 | Omnisend | Ecommerce multi-channel | Free (250 contacts) | Email + SMS + push in one workflow |
 | SmartrMail | Shopify ecommerce | Free (1K subs) | ML product recs, easiest ecommerce email |
 | Bento | Developers, SaaS | $30/mo | API-first, MCP integration, SOC 2 |
+| Nitrosend | AI-native teams | Closed beta | MCP-first, AI chat, API-driven |
 | Postmark | Transactional | Free (100 emails/mo) | 99%+ delivery, sub-1s |
 
 ### Budget Guide
@@ -315,8 +363,9 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 ## 13. COLD EMAIL
 
 ### Infrastructure (critical)
-- **NEVER send from primary domain.** Buy 3-5 separate domains. Warm 2-4 weeks.
+- **NEVER send from primary domain.** Buy 3-5 separate domains. Warm 2-4 weeks minimum.
 - Limit: 10-30 emails per inbox per day. Use dedicated cold email tool (NOT marketing ESP).
+- **Warming schedule:** Week 1-2 warmup only → Week 3: 5-10/day → Week 4: 10-20/day → Week 5-6: 20-30/day → Ongoing: never stop warmup.
 
 ### Writing Cold Emails
 - **Optimal length: 50-125 words.** Personalised opening → problem/observation → value prop → soft CTA.
@@ -347,9 +396,17 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 ### Human-AI Workflow
 1. Brief AI with context → 2. Generate draft → 3. Edit for brand voice → 4. A/B test → 5. Feed results back.
 
-### MCP Integration
-- Model Context Protocol enables AI to interact with email platforms through natural language.
-- Bento offers MCP server integration for managing email from within developer tools.
+### AI Agents (new in V1)
+- **Distinction:** AI features accelerate tasks. AI agents observe, decide, and act autonomously.
+- **Klaviyo K:AI:** Autonomous campaign creation — analyses data, builds segments, writes copy, optimises timing.
+- **ActiveCampaign Active Intelligence:** 34+ AI capabilities including natural-language segments and AI Brand Kit.
+- **Bento Tanuki AI:** Ask mode (suggestions) + YOLO mode (autonomous execution). Developer-focused.
+
+### MCP Integration (4 platforms)
+- **ActiveCampaign:** First ESP in Claude's official connector directory.
+- **Bento:** MCP server for managing email from developer tools.
+- **Mailjet:** Community MCP integration.
+- **Nitrosend:** MCP-first AI-native ESP (closed beta). Campaign creation via natural language, template design through AI chat, API-first architecture.
 
 > Full chapter: https://emailmarketingskill.com/14-ai-and-the-future-of-email/
 
