@@ -1,10 +1,13 @@
 [project]
 name = "cold-email-tool"
-version = "0.1.0"
+version = "0.2.0"
 description = "Cold email personalization tool — research, personalize, and draft high-signal outreach."
 requires-python = ">=3.10"
 dependencies = [
     "anthropic>=0.39.0",
+    "streamlit>=1.30.0",
+    "requests>=2.28.0",
+    "openpyxl>=3.1.0",
 ]
 
 [project.scripts]
