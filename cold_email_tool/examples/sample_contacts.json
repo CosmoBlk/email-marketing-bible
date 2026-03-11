@@ -1,0 +1,24 @@
+[
+  {
+    "full_name": "Patrick Collison",
+    "company": "Stripe",
+    "role": "CEO",
+    "website": "https://patrickcollison.com",
+    "twitter": "https://x.com/patrickc",
+    "notes": "Interested in economic development and progress studies"
+  },
+  {
+    "full_name": "Gwynne Shotwell",
+    "company": "SpaceX",
+    "role": "President & COO",
+    "notes": "Aviation and aerospace leadership"
+  },
+  {
+    "full_name": "Nat Friedman",
+    "company": "",
+    "role": "Investor & Builder",
+    "website": "https://nat.org",
+    "twitter": "https://x.com/natfriedman",
+    "notes": "Former GitHub CEO; AI investor"
+  }
+]
