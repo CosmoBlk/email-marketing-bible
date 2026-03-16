@@ -347,6 +347,7 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 | Omnisend | Ecommerce multi-channel | Free (250 contacts) | Email + SMS + push in one workflow |
 | SmartrMail | Shopify ecommerce | Free (1K subs) | ML product recs, easiest ecommerce email |
 | Bento | Developers, SaaS | $30/mo | API-first, MCP integration, SOC 2 |
+| Vero | SaaS, product-led | $54/mo (5K profiles) | Event-driven, data warehouse native |
 | Nitrosend | AI-native teams | Closed beta | MCP-first, AI chat, API-driven |
 | Postmark | Transactional | Free (100 emails/mo) | 99%+ delivery, sub-1s |
 
