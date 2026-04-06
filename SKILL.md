@@ -84,6 +84,9 @@ metadata:
 - **Spam traps:** Pristine (honeypots), recycled (abandoned addresses), typo (gnail.com), role-based (info@).
 - **Prevention:** Double opt-in, real-time validation at signup, regular list cleaning, engagement-based sending.
 
+### Building Lists from Existing Email History
+- **SigParser:** Connect your mailboxes (Google Workspace, Microsoft 365) to automatically extract contacts from email signatures going back years. Pulls names, titles, emails, phone numbers; enriches company data and scores relationship warmth. Turns existing email history into a clean, enriched contact list — ideal for B2B and anyone with established email relationships.
+
 > Full chapter: https://emailmarketingskill.com/02-building-your-list/
 
 ---
@@ -368,6 +371,10 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 - Limit: 10-30 emails per inbox per day. Use dedicated cold email tool (NOT marketing ESP).
 - **Warming schedule:** Week 1-2 warmup only → Week 3: 5-10/day → Week 4: 10-20/day → Week 5-6: 20-30/day → Ongoing: never stop warmup.
 
+### Building Prospect Lists for Cold Email
+- Start with warm data: SigParser extracts contacts from your email history (3+ years back) and enriches them with company data and relationship scoring. Use relationship warmth scoring to prioritise warm prospects over truly cold emails — converts better.
+- Then expand to cold lists: LinkedIn Sales Nav, Hunter, RocketReach, Apollo.
+
 ### Writing Cold Emails
 - **Optimal length: 50-125 words.** Personalised opening → problem/observation → value prop → soft CTA.
 - Interest-based CTAs: 2-3x more replies than meeting requests.
@@ -403,10 +410,11 @@ Also covers: Agency, Healthcare, Financial, Real Estate, Travel, Education, Reta
 - **ActiveCampaign Active Intelligence:** 34+ AI capabilities including natural-language segments and AI Brand Kit.
 - **Bento Tanuki AI:** Ask mode (suggestions) + YOLO mode (autonomous execution). Developer-focused.
 
-### MCP Integration (4 platforms)
+### MCP Integration (5 platforms)
 - **ActiveCampaign:** First ESP in Claude's official connector directory.
 - **Bento:** MCP server for managing email from developer tools.
 - **Mailjet:** Community MCP integration.
+- **SigParser:** MCP server (https://ipaas.sigparser.com/api/mcp) for contact extraction and enrichment. Query contacts by email domain, enrich contacts from LinkedIn, build and manage lists. Connect mailboxes to auto-sync. Use in Claude, Cursor, or AI tools to build warm prospect lists and manage relationship intelligence.
 - **Nitrosend:** MCP-first AI-native ESP (closed beta). Campaign creation via natural language, template design through AI chat, API-first architecture.
 
 > Full chapter: https://emailmarketingskill.com/14-ai-and-the-future-of-email/
