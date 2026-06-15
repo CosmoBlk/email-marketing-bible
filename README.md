@@ -1,18 +1,18 @@
-# Email Marketing Bible: Claude Code Skill
+# Email Marketing Bible
 
-The most comprehensive email marketing knowledge base, built for Claude Code.
+**The AI email automation skill for Claude, ChatGPT, and any agent.**
 
-68,000 words. 908 sources. 4,798 insights. 44 expert contributors. 19 industry playbooks. 57 curated email designs. Distilled into a single skill file that turns Claude into an email marketing expert.
+Install it and your AI stops guessing about email. It audits your setup, builds your flows from a prompt, drafts copy in your voice (not slop), tells you why you are in spam, and runs your ESP through MCP, with a hard rule that nothing blasts without your say-so.
 
-Built by [George Hartley](https://x.com/GTHartley) (founder of SmartrMail, email marketing SaaS, 28,000 customers).
+Built from 908 sources and the experience of running [SmartrMail](https://x.com/GTHartley) (email marketing SaaS, ~28,000 customers, 6 billion emails, acquired 2022). 17 chapters, 19 industry playbooks, 47 curated email designs. Free and open source.
 
 ## Why this exists
 
-Most email marketing advice is surface-level. "Personalise your subject lines." "Segment your list." "A/B test everything." You've heard it. It doesn't help when you're staring at a 2% open rate wondering what's actually broken.
+Most email marketing advice is surface-level. "Personalise your subject lines." "Segment your list." "A/B test everything." You have heard it. It does not help when you are staring at a 2% open rate, or when you have just handed an AI agent the keys to your sending account and it is about to industrialise your mistakes.
 
-This skill gives Claude the same knowledge that comes from running an email platform serving 28,000 customers: the patterns that repeat across industries, the mistakes that destroy campaigns, and the specific strategies that consistently generate outsized returns.
+In 2026 the job changed. Agents now build the campaign, segment the audience, draft the copy, and stage the send. The marketer is the director, not the operator. That only works if the agent is working from real benchmarks and hard guardrails instead of vibes. This skill is that discipline layer: the patterns that repeat across industries, the mistakes that destroy deliverability, the anti-slop rules that keep AI output from reading like AI output, and the send-safety gates that keep one prompt from mailing the wrong thing to your whole list.
 
-Every claim is backed by data. Every recommendation has been tested by practitioners. No theory. No filler. Specific things you can implement this week.
+Every claim is backed by data. No theory, no filler.
 
 ## Install
 
@@ -20,109 +20,101 @@ Every claim is backed by data. Every recommendation has been tested by practitio
 git clone https://github.com/CosmoBlk/email-marketing-bible.git ~/.claude/skills/email-marketing-bible
 ```
 
-That's it. One command. Claude now has access to the full knowledge base.
+One command. Your AI now has the full knowledge base. Works wherever you run skills (Claude Code, Claude Desktop, and agents that read the skill format).
 
 ## What the skill does
 
-Once installed, Claude can:
+Once installed, your AI can:
 
 | Task | What it does |
 |------|-------------|
-| **Audit your setup** | Review your current email marketing stack (flows, segments, deliverability, compliance) and tell you exactly what's missing |
-| **Draft email copy** | Write emails using proven frameworks (PAS, AIDA, Before-After-Bridge) with subject lines, preview text, body copy, and CTAs |
-| **Build automation flows** | Design welcome series, abandoned cart, post-purchase, win-back, sunset, and nurture sequences with timing and triggers |
-| **Pull industry benchmarks** | Get open rates, click rates, conversion rates, and revenue-per-email for your specific vertical |
-| **Fix deliverability** | Diagnose inbox placement issues with a 10-step framework covering authentication, reputation, content, and infrastructure |
-| **Compare platforms** | Get honest platform comparisons based on your list size, budget, and use case, not affiliate commissions |
-| **Review compliance** | Check your setup against GDPR, CAN-SPAM, CASL, CCPA, and the Australian Spam Act |
-| **Write cold email** | Build cold outreach sequences with proper infrastructure separation, warming, and personalisation |
-| **Design emails** | Reference 57 curated best-in-class email designs with specific design patterns, typography, colour, visual hierarchy, and "steal this" notes |
+| **Run email automation** | Build welcome, cart, post-purchase, and win-back flows from a prompt, then review exits, timing, and copy before anything goes live |
+| **Audit your setup** | Review flows, segments, deliverability, and compliance, and tell you exactly what is missing |
+| **Draft and de-slop copy** | Write emails with proven frameworks (PAS, AIDA, BAB) and strip the AI tells before send |
+| **Design anti-slop emails** | Own a colour, real imagery, live-text headlines, generated into inbox-safe MJML or React Email, dark-mode and mobile checked |
+| **Drive your ESP from AI** | Operate Klaviyo, Resend, beehiiv, Mailchimp, Omnisend, or nitrosend through MCP and connectors, with pre-send safety gates |
+| **Fix deliverability** | Diagnose inbox placement with a step-by-step triage covering authentication, reputation, content, and the AI-mediated inbox (Gemini summaries, open rate as noise) |
+| **Pull industry benchmarks** | Open, click, conversion, and revenue-per-email figures for your specific vertical |
+| **Compare platforms** | Honest comparison by list size, budget, and whether you want to run it from an agent, not affiliate commissions |
+| **Review compliance** | GDPR, CAN-SPAM, CASL, CCPA, and the Australian Spam Act, as a decision gate before any send |
+| **Write cold email** | Cold sequences with proper infrastructure separation, warming, and personalisation |
 
-## How to use it with Claude
+## How to use it
 
-Install the skill, then talk to Claude like you would an email marketing consultant. Here are some examples:
+Install the skill, then talk to your AI like an email marketing consultant.
 
-**Review your current email marketing:**
+**Audit and build:**
 ```
-"Review my current email setup. I'm running Klaviyo for a DTC skincare brand,
-doing about $2M/year. I have a welcome series, abandoned cart, and one weekly
-newsletter. What am I missing?"
-```
-
-**Fix a specific problem:**
-```
-"My emails are landing in Gmail promotions tab and my open rates dropped from
-22% to 14% over the last 3 months. What's going on and how do I fix it?"
+"Audit my Klaviyo account for a DTC skincare brand doing $2M/year. I have a
+welcome series, abandoned cart, and one weekly newsletter. What am I missing,
+and build me whatever flow would earn the most first."
 ```
 
-**Build flows from scratch:**
+**Fix a problem:**
 ```
-"Build me a complete post-purchase email sequence for my Shopify store. I sell
-premium coffee. Average order is $45, repeat purchase cycle is 30-45 days."
-```
-
-**Get industry-specific advice:**
-```
-"I'm launching a B2B SaaS product. What does my email marketing stack need
-to look like from day one? Give me the flows, segments, and metrics I should
-be tracking."
+"My emails are landing in Gmail promotions and opens dropped from 22% to 14%
+over three months. What is going on and how do I fix it?"
 ```
 
-**Draft copy:**
+**De-slop:**
 ```
-"Write a win-back email sequence for subscribers who haven't opened in 90 days.
-My brand voice is casual and direct. We sell fitness equipment."
+"Here is a draft welcome email. Make it sound like a person, not an AI, and
+keep it on our brand voice."
 ```
 
-Claude will pull from 68,000 words of research, benchmarks, frameworks, and real case studies to give you specific, actionable advice, not generic platitudes.
+**Design:**
+```
+"Design a launch email for a premium coffee brand. Own a colour, real product
+photography, generate it as MJML so it renders everywhere."
+```
 
-## What's inside the knowledge base
+The skill is structured in two parts: an operating manual (when the AI is acting: building, sending, diagnosing, designing) and a dense reference (benchmarks, frameworks, playbooks). Your AI reads the manual to operate and drops into the reference for facts.
+
+## What is inside the knowledge base
 
 ### 17 chapters
 
 | # | Chapter | What you get |
 |---|---------|-------------|
-| 1 | The Fundamentals | Why email wins, the marketing stack, key metrics, common mistakes |
-| 2 | Building Your List | Organic growth, popups, double vs single opt-in, spam traps, validation |
-| 3 | Segmentation & Personalisation | RFM scoring, engagement tiers, zero-party data, waterfall segmentation |
-| 4 | The Emails That Make Money | Welcome series, abandoned cart, post-purchase, win-back, with timing and benchmarks |
-| 5 | Copywriting That Converts | Subject lines, preview text, body copy, CTAs, frameworks (PAS, AIDA, BAB) |
-| 6 | Design & Technical | Mobile-first, dark mode, accessibility, email client compatibility |
-| 7 | Deliverability | SPF, DKIM, DMARC, BIMI, sender reputation, IP warming, spam filters |
-| 8 | Testing & Optimisation | A/B testing, statistical significance, send time optimisation |
-| 9 | Analytics & Measurement | KPIs by campaign type, attribution, subscriber LTV, incrementality |
-| 10 | Compliance & Privacy | GDPR, CAN-SPAM, CASL, CCPA, Australian Spam Act, one-click unsubscribe |
-| 11 | Industry Playbooks | Segment-specific tactics for 19 verticals (see below) |
-| 12 | Choosing Your Platform | Honest comparison of Klaviyo, Mailchimp, Kit, beehiiv, Sendlane, and more |
-| 13 | Cold Email & B2B Outbound | Infrastructure, tools, writing, personalisation, follow-up sequences |
-| 14 | AI & the Future of Email | Where AI helps, where it doesn't, practical integration, MCP |
-| 15 | Company Case Studies | How Casper, Morning Brew, Duolingo, Spotify, and 6 others use email |
-| 16 | Expert Directory | 44 practitioners referenced throughout, who to follow and why |
-| 17 | Best Email Designs 2026 | 57 curated designs with design best practices, visual hierarchy, brand voice, and "steal this" notes |
+| 1 | The Fundamentals | Why email wins, the stack, key metrics, the AI-mediated inbox |
+| 2 | Building Your List | Organic growth, popups, opt-in, spam traps, validation |
+| 3 | Segmentation & Personalisation | Engagement tiers, AI-built segments, 1:1 content from behaviour |
+| 4 | The Emails That Make Money | Welcome, cart, post-purchase, win-back, and building flows with AI |
+| 5 | Copywriting That Converts | Subject lines, frameworks, CTAs, and the anti-slop copy protocol |
+| 6 | Design & Technical | Mobile, dark mode, accessibility, anti-slop and prompted design |
+| 7 | Deliverability | SPF, DKIM, DMARC, BIMI, reputation, warming, autonomous-send safety |
+| 8 | Testing & Optimisation | A/B testing, significance, send-time, testing AI-assisted email |
+| 9 | Analytics & Measurement | KPIs by type, attribution, querying your data with AI |
+| 10 | Compliance & Privacy | GDPR, CAN-SPAM, CASL, CCPA, AU Spam Act, AI accountability |
+| 11 | Industry Playbooks | Tactics for 19 verticals (see below) |
+| 12 | Choosing Your Platform | Honest comparison, including which tools an agent can actually drive |
+| 13 | Cold Email & B2B Outbound | Infrastructure, writing, follow-up, AI in outbound |
+| 14 | AI Email Automation | The operating model, agent guardrails, MCP and connectors, what to automate |
+| 15 | Company Case Studies | How Casper, Morning Brew, Duolingo, Spotify, and others use email |
+| 16 | Expert Directory | The practitioners referenced throughout, who to follow and why |
+| 17 | Best Email Designs 2026 | 47 hand-curated emails with notes on why each works and what to steal |
+
+Plus four appendices: benchmarks by industry, frequency guide, marketing calendar, and methodology.
 
 ### 19 industry playbooks
 
-Every vertical gets its own playbook with specific tactics, benchmarks, and automation flows:
-
 `Ecommerce DTC` · `SaaS B2B` · `SaaS B2C` · `Newsletter & Creator` · `Agency` · `Nonprofit` · `Healthcare` · `Financial Services` · `Real Estate` · `Travel & Hospitality` · `Education` · `Professional Services` · `Retail` · `Events` · `B2B Manufacturing` · `Restaurant & Food` · `Fitness` · `Media & Publishing` · `Marketplace & Platform`
 
-### 44 expert contributors
+### Expert contributors
 
-Insights from practitioners including Chad S. White (Zeta Global), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson (EmailDeliverability.com), Tyler Denk (beehiiv), Ben Settle (Email Players), and 36 others. Full directory in Chapter 16.
+Insights from practitioners including Chad S. White (Zeta Global), Joanna Wiebe (Copyhackers), Chase Dimond (Structured Agency), Nathan Barry (Kit), Ann Handley (MarketingProfs), Troy Ericson, Tyler Denk (beehiiv), Ben Settle, and many others. Full directory in Chapter 16.
 
 ## Read the full guide
 
-The complete 68,000-word Email Marketing Bible is available at **[emailmarketingskill.com](https://emailmarketingskill.com)**, searchable, browsable, with all 17 chapters and 4 appendices.
+The complete Email Marketing Bible is at **[emailmarketingskill.com](https://emailmarketingskill.com)**, searchable and browsable, with all 17 chapters and 4 appendices, plus a free PDF.
 
 ## Research
 
-908 sources across industry reports (Litmus, Klaviyo, Campaign Monitor, HubSpot, Salesforce), practitioner blogs, academic research, platform documentation, and community discussions from Reddit, Shopify forums, and X.
-
-The research crawler is open source at [github.com/CosmoBlk/emb-research](https://github.com/CosmoBlk/emb-research).
+908 sources across industry reports (Litmus, Klaviyo, HubSpot, Salesforce, Validity), practitioner blogs, podcasts and transcripts, platform documentation, and community discussions, refreshed mid-2026 with a focus on AI email automation.
 
 ## Contributing
 
-Found an error? Have better data? Know a tactic that's missing? PRs and issues welcome. This is an open-source knowledge base, and the more practitioners contribute, the better it gets for everyone.
+Found an error? Have better data? Know a tactic that is missing? Issues and PRs welcome. The more practitioners contribute, the better it gets.
 
 ## License
 
