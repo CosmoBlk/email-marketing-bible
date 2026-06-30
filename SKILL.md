@@ -5,16 +5,16 @@ description: >
   email automation, driving an ESP from an agent (MCP/connectors), diagnosing
   deliverability, writing or de-slopping email copy, designing emails, choosing a
   platform, or pulling benchmarks. Covers AI email automation, flows, deliverability,
-  copywriting, segmentation, compliance, cold email, and 19 industry playbooks.
+  copywriting, segmentation, compliance, cold email, WhatsApp, SMS and RCS, and 19 industry playbooks.
 license: MIT
 metadata:
   author: george-hartley
-  version: "2.5"
+  version: "2.6"
 ---
 
 # Email Marketing Bible, Skill Reference
 
-> Source: EMB (17 chapters, 4 appendices). Full guide: https://emailmarketingskill.com
+> Source: EMB (19 chapters, 4 appendices). Full guide: https://emailmarketingskill.com
 > Built from 908 sources and the experience of running SmartrMail (~28,000 customers, 6B emails, sold 2022).
 > **Two parts.** Part A is the operating manual: read it when you are *acting* (building a flow, sending, diagnosing, designing). Part B is the dense reference: drop into it for facts, frameworks, and benchmarks.
 > Benchmarks are as of mid-2026. Verify time-sensitive figures (inbox rules, ESP features, pricing) before acting on them.
@@ -54,6 +54,7 @@ Map the request to a procedure. One hop.
 | Pick a platform | §13 Platform Selection | list size, use case, stack, budget, agent-driven? | shortlist + tradeoffs |
 | Pull a benchmark | Appendix | industry, email type | figure + caveat |
 | Cold outbound | §14 Cold Email | offer, ICP, sending domains, volume | sequence + infra plan |
+| WhatsApp / SMS / RCS | §Messaging Channels | channel, consent basis, region | channel plan + compliance gate |
 
 ## 2. AI EMAIL AUTOMATION (the operating model)
 
@@ -66,6 +67,8 @@ Mid-2026: the marketer's job moved from operator to director. You do not click t
 - *Keep human:* editorial/brand voice, strategy (segment priority, flow sequencing), creative direction, deliverability/domain management, and the **final send**.
 
 **The autonomy dial.** Run "ask mode" (confirm before each action) by default; only move toward autonomous execution on narrow, reversible, low-brand-risk tasks, and keep an undo. Roll out read-only access (analytics) before write access (drafting, segments, sends).
+
+**Supervised autonomy is the production stance, not timidity.** Gartner expects 40%+ of agentic AI projects cancelled by 2027; MIT found 95% of enterprise GenAI pilots show no P&L impact, the failure organisational not the model. Capability ships fast, so keep autonomy supervised and a human on the send. The real engine under "AI optimisation" is reinforcement learning and bandits (reallocating live traffic, versus a fixed A/B split you wait on); measure it with holdouts and explicit do-not-optimise constraints (margin, fatigue, complaints, brand safety), never last-touch credit. Agent preflight before any send: consent, suppression, frequency cap, channel eligibility, jurisdiction/quiet-hours, rendering + accessibility QA, personalisation confidence, inventory/pricing freshness, approval status, kill plan.
 
 **Controlling an ESP from AI, both surfaces.** This is not Anthropic-only. ESPs ship MCP servers (Klaviyo, Resend, Mailgun, beehiiv, MailerLite, Omnisend) and apps inside both Claude and ChatGPT (Mailchimp, Omnisend). MCP is becoming a cross-vendor standard. When advising, cover the surface the user actually uses.
 
@@ -86,6 +89,9 @@ Before staging any send, confirm every line. Surface the result to the human, th
 - [ ] Links resolve (decode wrapped CTAs), no broken/placeholder URLs
 - [ ] Sender identity correct (from-name + monitored reply-to), right account/brand
 - [ ] Send time set; consent basis valid for this audience and content type
+- [ ] Channel eligibility (non-email): SMS 10DLC brand+campaign registered; WhatsApp recipient opted in for the template category and template approved
+- [ ] Jurisdiction + quiet hours: send falls inside the legal window for each recipient's local time (SMS 8am-9pm local)
+- [ ] Kill switch: batched/throttled send with a working pause and a rollback plan before the first batch
 - [ ] Test send reviewed in a real inbox with real merge data
 - [ ] Human approval captured
 
@@ -105,7 +111,8 @@ Raw LLM copy is now a deliverability liability, not just a quality one. Google f
 
 The 2026 design risk is not ugly emails, it is forgettable ones. AI defaults to competent and generic. Force it off its defaults.
 
-- **Context beats prompt.** The biggest lever is not better wording, it is the design context the agent can read: a brand kit, design tokens, a components/exemplars set, a rules file. Feed those before iterating on prompts. Generic input produces generic output.
+- **Design for two readers, a human and the summariser.** Gmail Gemini and Apple Intelligence increasingly summarise the email before the human reads it, from the opening live text (gated by account/subscription, so a direction of travel, not a universal). Front-load the offer in real text, use semantic headings, never lead image-only. Live text beats text baked into images three ways at once: accessibility, dark mode, and the AI summary.
+- **Context beats prompt.** The biggest lever is not better wording, it is the design context the agent can read: a brand kit, design tokens, a tested-module library, a rules file. This token-plus-module system is what turns the same prompt from beige slop into on-brand, and it is why teams went from two weeks per email to shipping in days. Feed those before iterating on prompts. Generic input produces generic output.
 - **Generate into a safe substrate, not raw HTML.** Have the agent emit MJML, React Email, or Maizzle, which compile to inbox-safe HTML and handle Outlook. Raw-HTML-from-a-prompt is the classic slop trap.
 - **Anti-slop design rules:** own one colour (run it 30-60% of the surface; colour drives ~80% of brand recognition); restraint beats decoration (AI over-decorates, the job is subtraction); real photography/captures, never AI-stock (visible AI imagery lowers trust); bold **live-text** headlines, never image-based (accessibility, dark mode, and so Gemini can summarise); single message, strong negative space. Ban the AI-default purple-to-blue gradient and beige washes.
 - **Compliant by default.** Bake the constraints into the prompt: single column ≤600px, 44px tap targets, role="presentation" tables, dark-mode-safe colours (never pure #000 bg or #fff logos, use ~#121212), alt text on every image.
@@ -219,6 +226,25 @@ One-click unsubscribe (RFC 8058) required for 5K+/day to Gmail/Yahoo/Microsoft; 
 - **Follow-up:** 4 emails over 2-3 weeks, each adding new value; breakup gets 2-3x the reply rate.
 - **AI in outbound:** AI prospecting/personalisation (2-3x reply vs templates, produced faster) and autonomous reply handling, with the same domain/suppression/consent guardrails. Founder-led 1:1 from a real inbox still beats cold-blast on B2B reply + deliverability.
 
+## MESSAGING CHANNELS: WHATSAPP, SMS & RCS
+
+Email is the spine, but 2026 marketing is multi-channel. The same send-safety, consent, and anti-slop discipline applies; the mechanics differ. Route here for WhatsApp, SMS, or RCS.
+
+**WhatsApp Business (operator + compliance, not a read-rate showcase).**
+- **No "98% open rate".** WhatsApp does not report opens; read receipts are user-disabled and per-conversation. Judge on delivered-and-billed plus your own link clicks.
+- **Cost model:** billed per *delivered template* since 1 July 2025 (the old per-conversation / 1,000-free model is dead). Rate = category (Marketing/Utility/Authentication) × destination country × volume tier. Three **free lanes**: replies inside the 24h customer-service window, Utility inside that window, and the 72h Free Entry Point opened by a Click-to-WhatsApp ad answered within 24h. Live-fetch every rate, never hardcode.
+- **Cost reality:** marketing to US (+1) numbers is paused since 1 April 2025; European per-message rates run above SMS in expensive markets. Cold broadcast promo is a weak default in the West; WhatsApp pays off through the free lanes, CTWA conversations, and WhatsApp-default markets (India, Brazil, LATAM, MENA). Ad-led and conversational, not a cheaper blast.
+- **Opted-in ≠ delivered:** Meta publishes no fixed per-user cap; error **131049** is the actionable "too much marketing to this person" signal (wait, do not fast-retry). Quality rating = reputation, blocks/reports = complaints, tiers = warm-up.
+- **Rules:** opt-in mandatory; geo-branch hard (US = utility/auth only; EU = GDPR; India ≠ SMS-DLT); scoped business agents are fine, general-purpose third-party AI chatbots barred on the API since 15 Jan 2026 (Brazil/Italy carve-outs, EU moving, re-verify).
+
+**SMS (compliance-first).**
+- **US:** TCPA prior express *written* consent for marketing (penalties up to $500-$1,500/message); 8am-9pm recipient-local quiet hours (live 2025 litigation); **10DLC** brand + campaign registration with The Campaign Registry, where registration is necessary, not sufficient (registered traffic is still filtered for content, SHAFT, links, volume). CTIA STOP/HELP opt-out. Not legal advice, confirm by jurisdiction.
+- **Use it for the time-sensitive nudge** (cart, back-in-stock, last-chance); email carries the story. Add an SMS step to existing high-intent email flows rather than a parallel broadcast, and don't duplicate the same message across both. The real "great" SMS conversion bar is ~2%, not the folklore "21-30%".
+
+**RCS Business Messaging.** Viable to *test* in the US now, SMS fallback mandatory; reach still depends on carrier and provider provisioning. RBM (A2P, what a brand sends) is separate from encrypted person-to-person RCS and is not end-to-end encrypted the same way, so never tell customers your business messages are E2E encrypted. Launch checklist: brand/agent vetting, carrier+provider reach check, SMS fallback copy, rich-card graceful degradation, opt-out handling, consistent measurement naming across RCS and the fallback.
+
+**Unified consent model:** read consent per channel and category before any send. SMS and WhatsApp need explicit prior opt-in; email's floor in some regions (US CAN-SPAM) is opt-out, not opt-in. Consent does not travel across channels. Quiet hours, frequency caps, and suppression apply per channel.
+
 ## 15. PLATFORM SELECTION
 
 Selection factors: ecommerce depth · event/data model · **AI + programmatic interface (can an agent drive it via MCP/app, or dashboard-only; AI-native vs bolted-on; prompt-to-campaign quality; does it send finished HTML and render every send; multi-brand/agency mode)** · deliverability + warm-up controls · consent/suppression controls · approval workflows + audit logs · transactional separation · cost at projected list size. Choose for where you will be in 12 months.
@@ -291,6 +317,6 @@ Cross-cutting rules: own a colour; narrow widths and one font family; generous w
 
 ## SECTION INDEX (full chapters)
 
-Fundamentals /01-fundamentals/ · List building /02-building-your-list/ · Segmentation /03-segmentation-and-personalisation/ · Flows /04-the-emails-that-make-money/ · Copywriting /05-copywriting-that-converts/ · Design /06-design-and-technical/ · Deliverability /07-deliverability/ · Testing /08-testing-and-optimisation/ · Analytics /09-analytics-and-measurement/ · Compliance /10-compliance-and-privacy/ · Playbooks /11-industry-playbooks/ · Platforms /12-choosing-your-platform/ · Cold email /13-cold-email-and-b2b-outbound/ · AI email automation /14-ai-and-the-future-of-email/ · Case studies /15-company-case-studies/ · Expert directory /16-expert-directory/ · Best email designs /17-best-email-designs-2026/ · Benchmarks /appendix-a-benchmarks/ · Frequency /appendix-b-frequency-guide/ · Calendar /appendix-c-calendar/ · Methodology /appendix-d-methodology/
+Fundamentals /01-fundamentals/ · List building /02-building-your-list/ · Segmentation /03-segmentation-and-personalisation/ · Flows /04-the-emails-that-make-money/ · Copywriting /05-copywriting-that-converts/ · Design /06-design-and-technical/ · Deliverability /07-deliverability/ · Testing /08-testing-and-optimisation/ · Analytics /09-analytics-and-measurement/ · Compliance /10-compliance-and-privacy/ · Playbooks /11-industry-playbooks/ · Platforms /12-choosing-your-platform/ · Cold email /13-cold-email-and-b2b-outbound/ · WhatsApp /14-whatsapp-business/ · SMS & RCS /15-sms-and-rcs/ · AI & agentic marketing /16-ai-and-agentic-marketing/ · Case studies /17-company-case-studies/ · Expert directory /18-expert-directory/ · Best email designs /19-best-email-designs-2026/ · Benchmarks /appendix-a-benchmarks/ · Frequency /appendix-b-frequency-guide/ · Calendar /appendix-c-calendar/ · Methodology /appendix-d-methodology/
 
 Base URL: https://emailmarketingskill.com

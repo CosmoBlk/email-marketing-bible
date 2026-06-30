@@ -4,7 +4,7 @@
 
 Install it and your AI stops guessing about email. It audits your setup, builds your flows from a prompt, drafts copy in your voice (not slop), tells you why you are in spam, and runs your ESP through MCP, with a hard rule that nothing blasts without your say-so.
 
-Built from 908 sources and the experience of running [SmartrMail](https://x.com/GTHartley) (email marketing SaaS, ~28,000 customers, 6 billion emails, acquired 2022). 17 chapters, 19 industry playbooks, 47 curated email designs. Free and open source.
+Built from 908 sources and the experience of running [SmartrMail](https://x.com/GTHartley) (email marketing SaaS, ~28,000 customers, 6 billion emails, acquired 2022). 19 chapters, 19 industry playbooks, 47 curated email designs. Free and open source.
 
 ## Why this exists
 
@@ -72,7 +72,7 @@ The skill is structured in two parts: an operating manual (when the AI is acting
 
 ## What is inside the knowledge base
 
-### 17 chapters
+### 19 chapters
 
 | # | Chapter | What you get |
 |---|---------|-------------|
@@ -81,7 +81,7 @@ The skill is structured in two parts: an operating manual (when the AI is acting
 | 3 | Segmentation & Personalisation | Engagement tiers, AI-built segments, 1:1 content from behaviour |
 | 4 | The Emails That Make Money | Welcome, cart, post-purchase, win-back, and building flows with AI |
 | 5 | Copywriting That Converts | Subject lines, frameworks, CTAs, and the anti-slop copy protocol |
-| 6 | Design & Technical | Mobile, dark mode, accessibility, anti-slop and prompted design |
+| 6 | Design & Technical | Designing for two readers (human and AI summary), tokens and modules, dark mode, accessibility, anti-default craft |
 | 7 | Deliverability | SPF, DKIM, DMARC, BIMI, reputation, warming, autonomous-send safety |
 | 8 | Testing & Optimisation | A/B testing, significance, send-time, testing AI-assisted email |
 | 9 | Analytics & Measurement | KPIs by type, attribution, querying your data with AI |
@@ -89,10 +89,12 @@ The skill is structured in two parts: an operating manual (when the AI is acting
 | 11 | Industry Playbooks | Tactics for 19 verticals (see below) |
 | 12 | Choosing Your Platform | Honest comparison, including which tools an agent can actually drive |
 | 13 | Cold Email & B2B Outbound | Infrastructure, writing, follow-up, AI in outbound |
-| 14 | AI Email Automation | The operating model, agent guardrails, MCP and connectors, what to automate |
-| 15 | Company Case Studies | How Casper, Morning Brew, Duolingo, Spotify, and others use email |
-| 16 | Expert Directory | The practitioners referenced throughout, who to follow and why |
-| 17 | Best Email Designs 2026 | 47 hand-curated emails with notes on why each works and what to steal |
+| 14 | WhatsApp Business | The cost model and where it pays off, per-user caps, quality tiers, opt-in and geo-branching, the AI-chatbot rule |
+| 15 | SMS & RCS | TCPA, 10DLC and CTIA compliance, quiet hours, a realistic read on RCS, and AI in two-way messaging |
+| 16 | AI & Agentic Marketing | Supervised autonomy, agent preflight gates, data governance, non-deterministic optimisation, and what the vendors actually shipped |
+| 17 | Company Case Studies | How Casper, Morning Brew, Duolingo, Spotify, and others use email |
+| 18 | Expert Directory | The practitioners referenced throughout, who to follow and why |
+| 19 | Best Email Designs 2026 | 47 hand-curated emails with notes on why each works and what to steal |
 
 Plus four appendices: benchmarks by industry, frequency guide, marketing calendar, and methodology.
 
