@@ -14,7 +14,9 @@ metadata:
 
 # Email Marketing Bible, Skill Reference
 
-> v2.7, 8 Sep 2026. Distilled from the EMB (19 chapters, 908 sources, https://emailmarketingskill.com), from running SmartrMail (~28K customers, 6B emails, sold 2022) and three months running Nitrosend through agents.
+By George Hartley, co-founder of [Nitrosend](https://nitrosend.com).
+
+> v2.7, 8 Sep 2026. Distilled from the EMB (19 chapters, 908 sources, https://emailmarketingskill.com), from running SmartrMail (~12K customers, 6B emails, sold 2022) and three months running Nitrosend through agents.
 > Part A is the operating manual, Part B the reference. Figures are mid-2026; verify anything volatile (inbox rules, ESP features, pricing, model names) before acting.
 
 ---

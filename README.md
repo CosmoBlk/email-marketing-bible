@@ -1,10 +1,12 @@
 # Email Marketing Bible
 
+By [George Hartley](https://x.com/GTHartley), co-founder of [Nitrosend](https://nitrosend.com).
+
 **The AI email automation skill for Claude, ChatGPT, and any agent.** v2.7, 8 September 2026.
 
 Install it and your AI stops guessing about email. It audits your setup, builds flows from a prompt, drafts copy in your voice, directs email design instead of accepting the model's defaults, tells you why you are in spam, and runs your ESP through MCP with a hard rule that nothing blasts without your say-so.
 
-Built from 908 sources, the experience of running [SmartrMail](https://www.smartrmail.com) (~28,000 customers, 6 billion emails, acquired 2022), and three months of running Nitrosend's own sending through agents. 19 chapters, 19 industry playbooks, 47 curated email designs. Free and open source.
+Built from 908 sources, the experience of running [SmartrMail](https://www.smartrmail.com) (~12,000 customers, 6 billion emails, acquired 2022), and three months of running Nitrosend's own sending through agents. 19 chapters, 19 industry playbooks, 47 curated email designs. Free and open source.
 
 ## Install
 
