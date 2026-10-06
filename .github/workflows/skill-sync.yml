@@ -1,0 +1,15 @@
+name: Skill copy in sync
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Plugin copy matches root SKILL.md
+        run: |
+          cmp SKILL.md skills/email-marketing-bible/SKILL.md || {
+            echo "::error::skills/email-marketing-bible/SKILL.md must match SKILL.md (the plugin directory reads the copy, git-clone installs read the root). Copy SKILL.md over it."
+            exit 1
+          }
