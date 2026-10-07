@@ -1,7 +1,7 @@
 {
   "name": "email-marketing-bible",
   "displayName": "Email Marketing Bible",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "Data-backed email marketing skill for AI agents. Build flows, fix deliverability, write and de-slop copy, direct email design, and run your ESP via MCP with send-safety gates. 19 industry playbooks.",
   "author": {
     "name": "George Hartley",
@@ -13,6 +13,6 @@
   "license": "MIT",
   "keywords": ["email-marketing", "deliverability", "copywriting", "marketing-automation", "email-design", "ecommerce", "saas", "cold-email", "compliance", "mcp"],
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://emailmarketingskill.com",
+  "documentationUrl": "https://nitrosend.com/email-marketing-bible",
   "supportUrl": "https://github.com/CosmoBlk/email-marketing-bible/issues"
 }
