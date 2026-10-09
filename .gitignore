@@ -23,6 +23,7 @@ community-posts.md
 expert-thankyou-emails.md
 nitrosend-pricing.md
 *.png
+!assets/*.png
 *.jpg
 *.jpeg
 *.docx

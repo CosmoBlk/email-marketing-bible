@@ -1,4 +1,4 @@
-name: Skill copy in sync
+name: Skill checks
 
 on: [push, pull_request]
 
@@ -10,6 +10,46 @@ jobs:
       - name: Plugin copy matches root SKILL.md
         run: |
           cmp SKILL.md skills/email-marketing-bible/SKILL.md || {
-            echo "::error::skills/email-marketing-bible/SKILL.md must match SKILL.md (the plugin directory reads the copy, git-clone installs read the root). Copy SKILL.md over it."
+            echo "::error::skills/email-marketing-bible/SKILL.md must match SKILL.md (the plugin directory reads the copy, git-clone installs read the root). Run the sync command in RELEASING.md."
             exit 1
           }
+      - name: Plugin references match root references
+        run: |
+          diff -r references skills/email-marketing-bible/references || {
+            echo "::error::skills/email-marketing-bible/references must match references/. Run the sync command in RELEASING.md."
+            exit 1
+          }
+      - name: One version everywhere
+        run: |
+          fm=$(sed -n 's/^  version: "\(.*\)"$/\1/p' SKILL.md)
+          line=$(sed -n 's/^> v\([0-9][0-9.]*\), .*/\1/p' SKILL.md)
+          plugin=$(sed -n 's/^  "version": "\(.*\)",$/\1/p' .claude-plugin/plugin.json)
+          market=$(sed -n 's/^      "version": "\(.*\)",$/\1/p' .claude-plugin/marketplace.json)
+          readme=$(sed -n 's/^Version \([0-9][0-9.]*\), .*/\1/p' README.md)
+          echo "frontmatter=$fm skill-line=$line plugin.json=$plugin marketplace.json=$market readme=$readme"
+          if [ -z "$fm" ] || [ "$fm" != "$line" ] || [ "$fm" != "$plugin" ] || [ "$fm" != "$market" ] || [ "$fm" != "$readme" ]; then
+            echo "::error::Version strings differ. Set the same version in the SKILL.md frontmatter, the SKILL.md version line, plugin.json, marketplace.json and the README version line."
+            exit 1
+          fi
+      - name: No em dashes
+        run: |
+          set +e
+          grep -rn "$(printf '\342\200\224')" SKILL.md references README.md CHANGELOG.md RELEASING.md
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            echo "::error::Em dashes found (house rule). Replace each with a colon, comma, full stop or new sentence."
+            exit 1
+          elif [ "$status" -gt 1 ]; then
+            echo "::error::The em dash check could not read a file. Check the paths in this step."
+            exit 1
+          fi
+      - name: Core SKILL.md budget
+        run: |
+          words=$(wc -w < SKILL.md)
+          chars=$(wc -c < SKILL.md)
+          echo "SKILL.md: $words words (cap 2600), $chars bytes (cap 18000, about 4,500 tokens)"
+          if [ "$words" -gt 2600 ] || [ "$chars" -gt 18000 ]; then
+            echo "::error::SKILL.md is over budget ($words words, $chars bytes). The caps keep the gates inside the post-compaction token budget. Move detail into references/."
+            exit 1
+          fi

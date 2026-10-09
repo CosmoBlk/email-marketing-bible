@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "email-marketing-bible",
+  "description": "The Email Marketing Bible as a Claude Code plugin: an open-source, vendor-neutral email marketing skill for AI agents.",
+  "owner": {
+    "name": "George Hartley",
+    "url": "https://x.com/gthartley"
+  },
+  "plugins": [
+    {
+      "name": "email-marketing-bible",
+      "description": "Email marketing operating manual for AI agents, with hard send-safety gates: campaigns, newsletters and flows, deliverability and DNS, switching ESPs, compliance, anti-slop copy, email design and benchmarks, with any ESP through MCP or an API.",
+      "version": "2.8.0",
+      "source": "./",
+      "author": {
+        "name": "George Hartley",
+        "url": "https://x.com/gthartley"
+      },
+      "homepage": "https://emailmarketingskill.com",
+      "repository": "https://github.com/CosmoBlk/email-marketing-bible",
+      "license": "MIT",
+      "category": "marketing"
+    }
+  ]
+}

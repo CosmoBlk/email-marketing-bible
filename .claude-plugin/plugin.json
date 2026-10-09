@@ -1,8 +1,8 @@
 {
   "name": "email-marketing-bible",
   "displayName": "Email Marketing Bible",
-  "version": "2.7.1",
-  "description": "Data-backed email marketing skill for AI agents. Build flows, fix deliverability, write and de-slop copy, direct email design, and run your ESP via MCP with send-safety gates. 19 industry playbooks.",
+  "version": "2.8.0",
+  "description": "Email marketing operating manual for AI agents, with hard send-safety gates: campaigns, newsletters and flows, deliverability and DNS, switching ESPs, compliance, anti-slop copy, email design and benchmarks, with any ESP through MCP or an API.",
   "author": {
     "name": "George Hartley",
     "email": "george@nitrosend.com",

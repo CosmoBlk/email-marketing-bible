@@ -1,0 +1,42 @@
+# Platforms
+
+Read this when: choosing or comparing ESPs, or judging whether an agent can drive one.
+Last checked: 9 Oct 2026
+Gather first: list size, use case, stack, budget, whether an agent will operate it.
+
+Vendor features change monthly. Treat every row below as dated and verify it live before advising (core §0b). Whatever the platform allows, the core §0 gate holds.
+
+## How to choose
+
+Factors: ecommerce depth · event/data model · **agent interface (MCP or connector vs dashboard-only; agent coverage across build, test and send tools, not just reporting; multi-brand)** · **where approval is enforced (in the vendor's UI, through permission scopes, or server side) and the lowest scope that does the job** · deliverability + warm-up controls · consent/suppression controls · approval workflows + audit logs · cancel path · transactional separation · cost at projected list size. Choose for 12 months out.
+
+**The landscape.** Most major ESPs now expose an MCP server, a connector or a ChatGPT plugin, and where approval happens differs: some keep the send in their own UI, some gate it behind a permission scope, and some ship agents that act without per-message review. ChatGPT's App Directory became the Plugin Directory on 9 Jul 2026, and custom GPTs retire on 11 Dec 2026 [primary] https://help.openai.com/en/articles/6825453-chatgpt-release-notes ; https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq. Agent traffic into ESPs is multi-harness (ChatGPT was the top caller of Resend's MCP in Sep 2026, ahead of Cursor and Claude Code) [vendor] https://x.com/zenorocha/status/2103130299186233601, so keep instructions tool-agnostic.
+
+If an agent will operate the account, choose on the permission model and where approval is enforced, then on data depth and cost.
+
+## Agent surfaces, Oct 2026 (verify)
+
+| Platform | Best for | Agent surface | Source |
+|---|---|---|---|
+| Klaviyo | Shopify ecommerce | Deep data. Composer builds from a prompt and does not send, publish or schedule on its own. The hosted MCP can send (`send_campaign`) and cancel (`cancel_campaign_send`) for Owner, Admin or Manager roles, with a read-only flag | [primary] https://developers.klaviyo.com/en/docs/klaviyo_mcp_server_available_tools ; https://help.klaviyo.com/hc/en-us/articles/52308788113307 ; https://help.klaviyo.com/hc/en-us/articles/52833598880923 |
+| Mailchimp | Small business | Official Claude, ChatGPT, Codex and Perplexity connectors build email and SMS campaigns; Analytics AI. No general-purpose MCP is documented, and community servers range from read-only to send-capable, so check before connecting | [primary] https://mailchimp.com/solutions/ai-tools/ ; https://mailchimp.com/whats-new/ ; [vendor] https://www.usecarly.com/blog/mailchimp-mcp/ |
+| HubSpot | B2B inbound | Remote MCP (GA Apr 2026) creates and edits marketing email drafts only. Nurture Agent (beta) rewrites automated emails per contact, for 50% of recipients by default, with no per-email approval step documented | [primary] https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server ; https://knowledge.hubspot.com/marketing-email/personalize-automated-emails-with-nurture-agent ; https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available |
+| Customer.io | Lifecycle, B2C, SaaS | MCP with separate scopes: `read` (default), `read:sensitive`, `write` (drafts), `write:live` (sends), `configure`. Live edits and PII are off by default; unknown body fields are rejected rather than ignored | [primary] https://docs.customer.io/ai/mcp/get-started/ |
+| Iterable | Enterprise lifecycle | Open-source MCP, read-only by default; PII, writes and sends are separate opt-ins. Creating a blast campaign schedules it, because the API has no draft campaign | [primary] https://github.com/Iterable/mcp-server |
+| Braze | Enterprise lifecycle | MCP server through the dashboard login; Operator Connect (beta) brings its agent into Claude, ChatGPT and Cursor. Trade reports say launch approvals stay in the Braze UI | [primary] https://www.braze.com/resources/articles/forge-2026-braze-product-announcements ; [trade] https://www.cmswire.com/customer-experience/braze-forge-2026-recap-self-service-speed-and-autonomy-require-governance/ |
+| Omnisend | Ecommerce multichannel | MCP creates and schedules campaigns (with send-time optimisation), segments and forms; a ChatGPT plugin; Reports AI answers performance questions and can apply its suggested form and workflow fixes from the chat | [primary] https://support.omnisend.com/en/articles/16666654-what-s-new-september-2026 ; https://support.omnisend.com/en/articles/15958078-omnisend-ai-reports-ai |
+| ActiveCampaign | Automation-heavy SMB | Official plugin in Anthropic's Claude plugin directory; MCP connectors for Claude and ChatGPT; Active Intelligence drafts proactively and runs scheduled tasks | [primary] https://github.com/anthropics/claude-plugins-official/blob/main/.claude-plugin/marketplace.json ; https://www.activecampaign.com/product-updates |
+| Brevo | Multichannel, EU | Email + SMS, volume pricing; Aura agents and an MCP connector. Two security incidents in Sep 2026 (an SSO flaw, then a misused Cloudflare key): review SSO and API-key posture | [trade] https://ventureharbour.com/sendinblue-review ; [primary] https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up ; https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up |
+| Kit | Creators | Free tier; Kit MCP (May 2026) for Claude, ChatGPT and Gemini, with permissions you set and can revoke; trade reviews say writes need approval and MCP is on paid plans | [primary] https://kit.com/2026-release ; [trade] https://www.fastlancer.org/en/fastlancer-blog/kit-review |
+| beehiiv | Newsletters | MCP with writes on paid plans (reads only on free); Copilot builds automations and segments and waits for sign-off; ad network | [primary] https://product.beehiiv.com/p/beehiiv-mcp-v2 ; https://www.beehiiv.com/blog/summer-release-event-2026 |
+| Resend | Developers, transactional | React Email; remote MCP plus Claude, Codex and Cursor plugins; broadcasts can be sent from chat; a cancel API returns scheduled broadcasts to draft | [primary] https://resend.com/changelog |
+| Postmark | Transactional | Official MCP with every tool annotated, and sends flagged for confirmation | [primary] https://github.com/ActiveCampaign/postmark-mcp |
+| Salesforce Marketing Cloud | Enterprise | Engagement MCP server (GA Jun 2026); Campaign Agent sold as autonomous, and MCP-powered Headless Marketing, both GA scheduled for Oct 2026 | [primary] https://developer.salesforce.com/blogs/2026/06/the-mcp-server-for-marketing-cloud-engagement-is-now-ga ; https://www.salesforce.com/marketing/whats-new |
+| Adobe Journey Optimizer | Enterprise | Agent skills for hygiene and anomaly checks, journey simulation and diffs, holdout groups, content MCP tools | [primary] https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes |
+| Attentive | SMS-led ecommerce | AI Pro personalisation; Reporting Agent and MCP in beta (Sep 2026) | [primary] https://www.attentive.com/press-releases/attentive-releases-new-ai-pro-and-ai-reporting-functionality-helping-brands-turn-customer-signals-into-higher-value-engagement |
+| Shopify Messaging | Small Shopify stores | Sidekick drafts and edits; smart delivery decides which messages to hold back | [primary] https://www.shopify.com/editions/spring2026 |
+| Postup | Enterprise, publishers | Publisher-grade, not prompt-driven: an AI subject-line assistant and content recommendations; no public MCP or agent found | [primary] https://postup.com/features/ |
+| Bento | Developers, SaaS | API-first; official MCP (API key; its repo still calls it experimental) for Claude, Cursor and Codex, not the ChatGPT app; Tanuki AI with Ask and YOLO modes and one-click undo | [primary] https://bentonow.com/docs/integrations/mcp ; https://bentonow.com/ai |
+| Nitrosend | AI-native teams | MCP-first, no dashboard needed; runs from Claude, ChatGPT, Codex or Cursor; approval + test gates built in. Disclosure: shares a founder with this guide | [vendor] https://nitrosend.com |
+
+Per-recipient generative sends (HubSpot's Nurture Agent, Salesforce's Campaign Agent) change content after approval by design. Turning one on is a send decision under core §0, and its lift needs a holdout (measurement.md).
