@@ -19,6 +19,7 @@ Broad sends on any channel go through the core §0 gate. Channel consent is sepa
 
 - TCPA requires prior express *written* consent for marketing ($500-$1,500 per message). Sending window 8am-9pm recipient local time. **10DLC** brand and campaign registration is necessary, not sufficient: content, SHAFT categories, links and volume are still filtered. CTIA STOP/HELP. Confirm by jurisdiction. The FCC's broader "revoke consent by any reasonable means" rules are changing; check the current status before relying on a date.
 - SMS is the time-sensitive nudge (cart, back-in-stock, last chance) as a step inside high-intent email flows, never a duplicate broadcast. Judge SMS conversion by message type against the bands below, not the folklore 21-30%.
+- A failed-payment text is one escalation after email has stalled, with no offer in it, or it becomes marketing (flows.md, Failed payments).
 - Benchmarks as bands, not averages (Postscript 2026, 17,000+ Shopify stores, 2025 data, 25th to 75th percentile) [vendor] https://postscript.io/sms-benchmarks: campaign click 2.87-8.01% and conversion 0.12-0.54%; abandoned cart click 9.53-17.28%, conversion 3.97-7.84%, revenue per message $3.52-$10.95; back-in-stock click 36.71-58.70%; campaign unsubscribe 0.33-0.88%.
 
 ## RCS

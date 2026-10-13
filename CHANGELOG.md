@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.8.2 (13 Oct 2026)
+
+### Added
+
+- **Failed payments (dunning) in `references/flows.md`.** The skill had no guidance on failed-payment, card-expiry or involuntary-churn emails. The new section covers who owns what (the billing system owns retries, subscription state and every date), card-expiry notices, retry and email cadence with public defaults from Stripe, Paddle, Recurly and Chargebee, subject and copy rules, seven conditions that must hold before an email states a cancellation date, sender and reply-to, SMS as a second channel, recovery benchmarks with their denominators, and agent safety rules: never trigger or re-send billing emails without a human order, and stay read-only on the billing system.
+- **Transactional and service messages in `references/compliance.md` (new section 7).** What keeps a billing notice a service message, and what turns it into marketing, under CAN-SPAM, CASL, the Spam Act, UK PECR, GDPR and Gmail's sender rules. The Watchlist is now section 8.
+- Pointers from `benchmarks.md` (with two more "Don't cite" entries), `messaging-channels.md`, `playbooks.md` and `sources.md`.
+
+Built from public processor and billing-vendor docs and benchmark reports, opened 13 Oct 2026. No chapter covers dunning yet.
+
+### Changed
+
+- The core router row "Build or edit a flow" now reads "Flow, or failed-payment (dunning) email". The core stays at 2,600 words.
+
 ## 2.8.1 (13 Oct 2026)
 
 ### Fixed

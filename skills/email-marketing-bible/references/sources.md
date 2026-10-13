@@ -40,6 +40,8 @@ The full guide is at https://emailmarketingskill.com and https://emailmarketings
 | appendix-c-calendar | Marketing calendar | flows.md |
 | appendix-d-methodology | How the research was done | (chapter only) |
 
+Failed-payment (dunning) guidance is in flows.md only. No chapter covers it yet, so don't look for it in chapter 4.
+
 ## 2. Who to follow
 
 - **Chapter 18** lists 49 practitioners across strategy, platforms, copywriting, deliverability, design, ecommerce, agencies, newsletters and consulting. On designing with AI: Anshu Chimala @anshuc, Karri Saarinen @karrisaarinen, Ryo Lu @ryolu_, Jenny Wen @jenny_wen, Lee Munroe @leemunroe.
@@ -72,6 +74,7 @@ Cited in the reference files; listed here for credit and quick lookup.
 - Ann Handley, "AI Slop, Accusations, And A Better Way" [practitioner] https://annhandley.com/ai-slop/
 - CRTC, PH Canada (Pizza Hut) CASL undertaking (1 Oct 2026) [primary] https://crtc.gc.ca/eng/archive/2026/ut261001.htm
 - Adobe, 2026 US holiday shopping forecast (28 Sep 2026) [primary] https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record
+- Failed-payment recovery (flows.md; opened 13 Oct 2026): Stripe, revenue recovery docs [primary] https://docs.stripe.com/billing/revenue-recovery ; Recurly, churn rate benchmarks, July 2026 data [vendor] https://www.recurly.com/research/churn-rate-benchmarks ; Luke Marshall, "The State of Subscription Payment Recovery in 2026" (Baremetrics, 3 Jun 2026) [vendor] https://baremetrics.com/blog/subscription-payment-recovery-benchmarks ; Churn Buster docs [vendor] https://churnbuster.io/docs/email-templates/ ; Bettina Specht, dunning email examples (Postmark, 11 May 2022) [vendor] https://postmarkapp.com/guides/dunning/email-examples ; ACMA on Commonwealth Bank's misclassified service messages (17 Oct 2024) [primary] https://www.acma.gov.au/articles/2024-10/commonwealth-bank-pays-75m-more-spam-breaches
 
 ## 4. Further reading, Jul to Oct 2026
 

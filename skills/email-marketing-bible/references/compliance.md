@@ -14,11 +14,12 @@ A working summary for agents, not legal advice. When an answer turns on a figure
 4. Truthful offers
 5. AI disclosure and provenance
 6. Cold email legal line
-7. Watchlist
+7. Transactional and service messages
+8. Watchlist
 
 ## 1. The six send-time questions
 
-1. **Type: transactional, lifecycle, marketing, newsletter or cold?** The primary purpose of the content decides it, not an ESP setting (CAN-SPAM's primary-purpose test, [primary] https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business). Each type has its own consent basis and, by default, its own subdomain (core §0).
+1. **Type: transactional, lifecycle, marketing, newsletter or cold?** The primary purpose of the content decides it, not an ESP setting (CAN-SPAM's primary-purpose test, [primary] https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business). Each type has its own consent basis and, by default, its own subdomain (core §0). Billing notices and other service messages: section 7.
 2. **Recipient region?** Rules follow the recipient, not the sender. A list with people in several regions needs the strictest applicable rule for each person, or region-split sends.
 3. **Consent basis for this audience and this content, including buyers?** A purchase is not automatically marketing consent: confirm the permission (express consent, or a soft opt-in where the regime allows one) for this content. Keep the record: source, date, wording shown.
 4. **One-click unsubscribe and physical address present?** Section 3 and the regime table.
@@ -75,7 +76,22 @@ Check jurisdiction, recipient type and basis before any cold send.
 
 **AI does not transfer liability.** You own an agent's sends; never trust it to preserve the unsubscribe or footer when it edits a template.
 
-## 7. Watchlist (not gates)
+## 7. Transactional and service messages
+
+Billing notices (failed-payment and card-expiry emails, flows.md), receipts and account alerts. The label follows the content (question 1): a message is a service message only while it carries nothing but the service information. Promotional content, or a link to it, makes the whole message marketing, under the rules in section 2.
+
+| Regime | A pure service message | What makes it marketing | Source | Checked |
+|---|---|---|---|---|
+| CAN-SPAM (US) | "Transactional or relationship" content includes notice of a change in the recipient's standing in an ongoing commercial relationship. It may not carry false or misleading routing information and is otherwise exempt from most provisions | A subject line that reads as commercial, or transactional content that doesn't come first. Mail to subscribers and members is not transactional by default | [FTC guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) [primary] | 13 Oct 2026 |
+| CASL (Canada) | Consent is not needed for a message that solely gives factual information about an ongoing subscription, membership or account (s 6(6)(d)). That exempts it from consent only: a commercial electronic message still needs sender identification and an unsubscribe mechanism (s 6(2)) | Anything that encourages participation in a commercial activity, judged on the content, its links and its contact details (s 1(2)) | [Act](https://laws-lois.justice.gc.ca/eng/acts/E-1.6/page-1.html) [primary] | 13 Oct 2026 |
+| Spam Act (Australia) | "Purely 'service' messages that are not commercial" can go without consent or an unsubscribe facility | "Marketing content or direct links to marketing content". Commonwealth Bank paid A$7.5M over more than 170 million marketing emails sent with no unsubscribe, after wrongly classifying messages as non-commercial (ACMA, 17 Oct 2024) | [ACMA](https://www.acma.gov.au/articles/2024-10/commonwealth-bank-pays-75m-more-spam-breaches) [primary] | 13 Oct 2026 |
+| UK PECR | Messages sent purely for administrative or customer service purposes are not direct marketing, if they only give administrative information and promote nothing | Adding advertising or marketing material | [ICO](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-electronic-mail/key-concepts-for-direct-marketing-using-electronic-mail/) [primary] | 13 Oct 2026 |
+| GDPR (EU) | A notice needed to perform the customer's contract can rest on Article 6(1)(b) rather than marketing consent. National ePrivacy rules decide what counts as direct marketing, so check the member state | Promotional content | [Art 6](https://gdpr-info.eu/art-6-gdpr/) [primary] | 13 Oct 2026 |
+| Gmail (a mailbox rule, not law) | One-click unsubscribe "is required only for marketing and promotional messages"; transactional messages are excluded | Recipients decide what a message is, not Google, and a high spam rate hurts delivery "for any message type" | [Google FAQ](https://support.google.com/a/answer/14229414) [primary] | 13 Oct 2026 |
+
+So a billing notice carries no promotion, cross-sell, upgrade offer, referral ask or link to marketing content. A save offer is a separate marketing email under marketing consent. A marketing unsubscribe does not stop service messages, so keep the two suppression lists apart, and still stop mailing addresses that hard bounce. Text messages have their own consent rules (messaging-channels.md).
+
+## 8. Watchlist (not gates)
 
 - **Australia:** privacy-policy disclosure of automated decisions that significantly affect people starts 10 Dec 2026; AI-personalised offers or prices may be in scope [primary] https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making
 - **EU:** a Digital Fairness Act proposal (dark patterns, fake urgency, personalised pricing) is expected before the end of 2026 [trade] https://www.privacylaws.com/news/eu-proposal-on-digital-fairness-act-expected-by-the-end-of-2026/
