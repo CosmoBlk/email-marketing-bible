@@ -35,7 +35,7 @@ claude plugin validate --strict .
 
 - The GitHub release title and notes.
 - The copy and JSON-LD on nitrosend.com/email-marketing-bible.
-- The hero and `llms.txt` on emailmarketingskill.com.
+- The hero and `llms.txt` on emailmarketingskill.com. `llms.txt` is the index agents fetch from: it must list every file in `references/` as a full raw.githubusercontent.com URL and every chapter as a full URL, because Claude's web fetch refuses a URL that is not already in a user message or an earlier fetch result. Deploy it and check it is live before merging a core that names new files.
 
 ## 6. Commit
 

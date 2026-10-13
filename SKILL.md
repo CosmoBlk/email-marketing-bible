@@ -15,15 +15,15 @@ description: >
 license: MIT
 metadata:
   author: george-hartley
-  version: "2.8.0"
+  version: "2.8.1"
 ---
 
 # Email Marketing Bible
 
 By George Hartley, co-founder of [Nitrosend](https://nitrosend.com). Disclosure: Nitrosend is one of the platforms compared in references/platforms.md.
 
-> v2.8.0, 9 Oct 2026. Distilled from the EMB (19 chapters, research across 900+ sources), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
-> Rules and gates are here; detail is in `references/`, named by the router (§2). If `references/` is missing, fetch the file from `raw.githubusercontent.com/CosmoBlk/email-marketing-bible/main/references/`, or the chapter at `emailmarketingskill.com/<slug>/` (slugs in §8). If you are offline, name the chapter and never invent the figure.
+> v2.8.1, 13 Oct 2026. Distilled from the EMB (19 chapters, research across 900+ sources), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
+> Rules and gates are here; detail is in `references/`, named by the router (§2). If `references/` is missing, fetch https://emailmarketingskill.com/llms.txt and use its URLs verbatim (Claude's fetch refuses assembled URLs); if refused, have the user paste that URL. Offline, name the chapter and never invent the figure.
 
 ## 0. Operating rules and the send gate
 
@@ -151,6 +151,6 @@ The first three are ESP mechanics (check your ESP's equivalent); the rest hold a
 
 ## 8. Chapters and where detail lives
 
-Full guide: https://emailmarketingskill.com. Fetch `emailmarketingskill.com/<slug>/` for depth; references/sources.md says which chapter answers what. Where a chapter and a reference disagree, the reference wins.
+Full guide: https://emailmarketingskill.com (chapter URLs: llms.txt, above). references/sources.md says which chapter answers what. Where a chapter and a reference disagree, the reference wins.
 
 01-fundamentals, 02-building-your-list, 03-segmentation-and-personalisation, 04-the-emails-that-make-money, 05-copywriting-that-converts, 06-design-and-technical, 07-deliverability, 08-testing-and-optimisation, 09-analytics-and-measurement, 10-compliance-and-privacy, 11-industry-playbooks, 12-choosing-your-platform, 13-cold-email-and-b2b-outbound, 14-whatsapp-business, 15-sms-and-rcs, 16-ai-and-agentic-marketing, 17-company-case-studies, 18-expert-directory, 19-best-email-designs-2026, appendix-a-benchmarks, appendix-b-frequency-guide, appendix-c-calendar, appendix-d-methodology.

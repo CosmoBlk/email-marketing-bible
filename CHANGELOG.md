@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.1 (13 Oct 2026)
+
+### Fixed
+
+- **Reference and chapter fetching on hosted agents.** The core told agents to build a URL from a base and a slug. Claude's web fetch only opens a URL that already appears in a user message or in an earlier search, fetch or tool result, so the built URL was refused before it reached the site (error `url_not_in_prior_context`) and the agent reported the site as blocked. The core now points at the index https://emailmarketingskill.com/llms.txt (every reference file and chapter as a full URL), tells the agent to use those URLs verbatim, and has it ask the user to paste that URL if the fetch is refused too. `references/sources.md`, `references/playbooks.md` and the README follow suit.
+
 ## 2.8.0 (9 Oct 2026)
 
 A harder skill, not a bigger one. The single 302-line file became a short core (`SKILL.md`, about 2,600 words) with the send gate in its first section, plus 16 reference files under `references/` that the core's router names. The old file loaded about 6,700 tokens, and Claude Code keeps only the first 5,000 tokens of a skill after compaction, so the platform table, the disclosure and the benchmarks dropped out mid-session. The core now sits well under that budget.
