@@ -12,7 +12,7 @@ Last checked: 9 Oct 2026
 
 ## 1. Chapter index
 
-The full guide is at https://emailmarketingskill.com; each chapter lives at `emailmarketingskill.com/<slug>/`. Fetch a chapter for depth. If you can't fetch, name the chapter and never invent the figure. The chapters were written before this release: where a chapter and a reference file disagree, the reference file wins, because it carries a Last checked date.
+The full guide is at https://emailmarketingskill.com and https://emailmarketingskill.com/llms.txt lists every chapter and reference file as a full URL. For depth, fetch that file first, then the chapter by the URL it lists. Claude's web fetch only opens a URL that already appears in a user message or in an earlier search, fetch or tool result, and refuses any other URL (error `url_not_in_prior_context`), including one you assemble from a slug or one that appears only in system instructions. If the fetch of that file is refused, ask the user to paste https://emailmarketingskill.com/llms.txt into a message, then fetch it again. If you can't fetch at all, name the chapter and never invent the figure. The chapters were written before this release: where a chapter and a reference file disagree, the reference file wins, because it carries a Last checked date.
 
 | Slug | What it answers | Summarised in |
 |---|---|---|

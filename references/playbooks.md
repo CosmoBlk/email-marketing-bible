@@ -4,7 +4,7 @@ Read this when: the business is in a named vertical or planning a season.
 Last checked: 9 Oct 2026
 Gather first: vertical, business model, list size, current flows, regions.
 
-Playbooks for 19 verticals: five in depth here, the rest summarised, each with a pointer to chapter 11 (`emailmarketingskill.com/11-industry-playbooks/`) for more. Figures carried over from the long form are labelled [directional]; check them against the account's own data. Seasonal plans and BFCM are in flows.md. Every send still goes through the core §0 gate.
+Playbooks for 19 verticals: five in depth here, the rest summarised, each with a pointer to chapter 11 ( https://emailmarketingskill.com/11-industry-playbooks/ ) for more. Figures carried over from the long form are labelled [directional]; check them against the account's own data. Seasonal plans and BFCM are in flows.md. Every send still goes through the core §0 gate.
 
 ## In depth
 

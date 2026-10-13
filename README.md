@@ -4,7 +4,7 @@ By [George Hartley](https://x.com/GTHartley), co-founder of [Nitrosend](https://
 
 **The AI email automation skill for Claude, ChatGPT, and any agent.**
 
-Version 2.8.0, 9 October 2026.
+Version 2.8.1, 13 October 2026.
 
 It audits your setup, builds flows from a prompt, drafts copy in your voice, directs email design instead of accepting the model's defaults, tells you why you are in spam, and runs your ESP through MCP with a hard rule that nothing blasts without your say-so.
 
@@ -29,7 +29,7 @@ npx skills add CosmoBlk/email-marketing-bible
 
 Or git clone the repo into that agent's skills folder.
 
-**ChatGPT, Gemini or any single-file tool:** give it the raw core file, https://raw.githubusercontent.com/CosmoBlk/email-marketing-bible/main/SKILL.md. The core works on its own: when `references/` isn't there, it fetches the matching reference file from this repo, or the chapter from emailmarketingskill.com.
+**ChatGPT, Gemini or any single-file tool:** give it the raw core file, https://raw.githubusercontent.com/CosmoBlk/email-marketing-bible/main/SKILL.md. The core works on its own: when `references/` isn't there, it reads https://emailmarketingskill.com/llms.txt and fetches the matching reference file or chapter by the full URL listed there. Claude's web fetch only opens a URL that appears in a user message or an earlier search or fetch result, so if your agent says the site is blocked, paste https://emailmarketingskill.com/llms.txt into the chat and ask again.
 
 ## Why this exists
 
