@@ -4,7 +4,7 @@ By [George Hartley](https://x.com/GTHartley), co-founder of [Nitrosend](https://
 
 **The AI email automation skill for Claude, ChatGPT, and any agent.**
 
-Version 2.8.1, 13 October 2026.
+Version 2.8.2, 13 October 2026.
 
 It audits your setup, builds flows from a prompt, drafts copy in your voice, directs email design instead of accepting the model's defaults, tells you why you are in spam, and runs your ESP through MCP with a hard rule that nothing blasts without your say-so.
 
@@ -132,6 +132,7 @@ Added:
 - Flow lifecycle rules, A/B testing rules with a sample-size table, and a Gmail open-drop diagnostic.
 - A dated model shelf, a permission ladder for connecting agents to ESPs, and dated examples from Grok Bot, Muse and dots.
 - Further reading: popular public work on AI and email from July to October 2026.
+- Failed-payment (dunning) guidance in `references/flows.md`, and a table of what keeps a billing notice transactional, by regime, in `references/compliance.md` (v2.8.2).
 
 Changed:
 - Corrected the CAN-SPAM penalty ($53,088), the Spam Act caps, GDPR erasure timing, the DMARC floor (p=none at Gmail, Yahoo and Outlook), who requires one-click unsubscribe, BIMI (CMC needs no trademark), the WhatsApp AI-chatbot rule and WhatsApp's free messaging lanes (changed 1 Oct 2026).

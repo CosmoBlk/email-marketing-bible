@@ -15,14 +15,14 @@ description: >
 license: MIT
 metadata:
   author: george-hartley
-  version: "2.8.1"
+  version: "2.8.2"
 ---
 
 # Email Marketing Bible
 
 By George Hartley, co-founder of [Nitrosend](https://nitrosend.com). Disclosure: Nitrosend is one of the platforms compared in references/platforms.md.
 
-> v2.8.1, 13 Oct 2026. Distilled from the EMB (19 chapters, research across 900+ sources), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
+> v2.8.2, 13 Oct 2026. Distilled from the EMB (19 chapters, research across 900+ sources), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
 > Rules and gates are here; detail is in `references/`, named by the router (§2). If `references/` is missing, fetch https://emailmarketingskill.com/llms.txt and use its URLs verbatim (Claude's fetch refuses assembled URLs); if refused, have the user paste that URL. Offline, name the chapter and never invent the figure.
 
 ## 0. Operating rules and the send gate
@@ -55,7 +55,7 @@ Files are in `references/`.
 |---|---|---|
 | "Send this now", any send or schedule | §0, §4 | Packet shown; waiting for "send it" |
 | Campaign or newsletter | §4, copy.md, design.md | Draft, preview URL, seed test, packet shown |
-| Build or edit a flow | flows.md | Drafted, read back as numbered steps with exits; not activated |
+| Flow, or failed-payment (dunning) email | flows.md | Drafted, read back as numbered steps with exits; not activated |
 | Audit a programme | agent-ops.md, flows.md, deliverability.md | Findings ranked, each with its fix; nothing changed |
 | Why am I in spam, bounces, complaints | deliverability.md, thresholds.md | Root cause shown with evidence; fix and monitoring window stated |
 | DNS or authentication change | deliverability.md (DNS protocol) | Records drafted for the DNS owner; re-verified after the change |

@@ -76,6 +76,10 @@ Details in measurement.md.
 
 Postscript 2026 percentile bands are in messaging-channels.md.
 
+## Payment recovery
+
+Involuntary churn and failed-payment recovery rates are in flows.md (Failed payments), each with its denominator: a rate over every failed payment and a rate over the payments a dunning tool chased are not comparable.
+
 ## Don't cite
 
 - "45.6% opens, CTR 4.35% to 3.93%" as evidence about AI summaries: it is Omeda's Q2 2025 publisher data with the AI link guessed at.
@@ -84,3 +88,4 @@ Postscript 2026 percentile bands are in messaging-channels.md.
 - "AI-referred visitors spend 43% more per visit": not in Adobe's release.
 - Klaviyo "$1.94 vs $0.11" revenue per recipient for flows against campaigns: secondary sources only.
 - Washington CEMA "$500 per email" as current exposure: new suits get $100 (compliance.md).
+- "$129 billion lost to failed payments in 2025": a projection quoted from a secondary site. "20-40% of churn is involuntary": an estimate with no stated basis (flows.md).
