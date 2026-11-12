@@ -44,6 +44,8 @@ jobs:
             echo "::error::The em dash check could not read a file. Check the paths in this step."
             exit 1
           fi
+      - name: Skill ZIP builds and meets the claude.ai upload rules
+        run: ./scripts/build-skill-zip.sh
       - name: Core SKILL.md budget
         run: |
           words=$(wc -w < SKILL.md)

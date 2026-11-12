@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.8.3 (12 Nov 2026)
+
+### Added
+
+- **A Claude upload package.** `scripts/build-skill-zip.sh` builds `email-marketing-bible.zip` (one `email-marketing-bible/` folder with `SKILL.md`, `references/` and `LICENSE`) for claude.ai and Claude desktop, and checks it against the upload form's rules: folder named after the skill, `SKILL.md` directly inside, a description of 200 characters or fewer. The packaged `SKILL.md` carries a short description for that cap; the body is unchanged. A release workflow attaches the ZIP to every release, so `releases/latest/download/email-marketing-bible.zip` always serves the current version, and CI builds it on every push.
+- **README install routes for people who are not developers:** upload the ZIP on any Claude plan, or add the plugin from this repository on a paid plan, ahead of the Claude Code and `npx skills` commands.
+- `CITATION.cff`, and a "Reusing this guide" section in the README: the MIT notice must travel with any copy; a link to the original and `noindex` on web copies are requested.
+
+### Changed
+
+- **No unasked fetches.** When `references/` is missing, the core now asks the user to install the full package or paste the llms.txt URL, instead of fetching it. `references/sources.md` offers to read a chapter rather than fetching one by default. The core is 2,593 words.
+- The README and the core version line drop the source and word counts, which read as marketing and disagreed across listings.
+
 ## 2.8.2 (13 Oct 2026)
 
 ### Added

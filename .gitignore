@@ -33,3 +33,6 @@ email-marketing-skill-for-claude-code-AI-studio/
 emb-research/
 ProductHunt/
 .claude/
+
+# Build output (scripts/build-skill-zip.sh)
+dist/

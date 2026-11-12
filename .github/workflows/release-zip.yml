@@ -1,0 +1,32 @@
+name: Attach skill ZIP to release
+
+# Every published release gets dist/email-marketing-bible.zip as an asset, so
+# https://github.com/CosmoBlk/email-marketing-bible/releases/latest/download/email-marketing-bible.zip
+# always serves the latest upload package for claude.ai and Claude desktop.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to attach the ZIP to (for example v2.8.3)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
+      - name: Build the skill ZIP
+        run: ./scripts/build-skill-zip.sh
+      - name: Attach it to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: gh release upload "$TAG" dist/email-marketing-bible.zip --clobber
