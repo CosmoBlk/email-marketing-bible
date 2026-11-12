@@ -8,7 +8,7 @@ Works in Claude (web, desktop, Cowork and Claude Code), Codex, Cursor, ChatGPT a
 
 By [George Hartley](https://www.linkedin.com/in/gthartley/), who founded [SmartrMail](https://smartrmail.com/about) (email marketing for about 12,000 ecommerce stores, sold to Relay Commerce in 2022) and co-founded [Nitrosend](https://nitrosend.com). Disclosure: Nitrosend is one of the platforms the skill compares.
 
-Version 2.8.3, 12 November 2026.
+Version 2.8.4, 12 November 2026.
 
 ## Install
 
@@ -172,7 +172,7 @@ v2.8.3 adds the Claude ZIP and plugin install routes above, and makes the skill 
 
 The skill and the guide are MIT licensed. You can copy, adapt and republish them, including commercially, as long as the copyright notice (`Copyright (c) 2026 George Hartley`) and the [MIT licence text](LICENSE) stay with your copy.
 
-If you publish a copy of the guide on the web, please also link each page to its original on emailmarketingskill.com and mark your copy `noindex` (or point its canonical tag at the original). Those two are requests, not licence conditions. Citation details are in [CITATION.cff](CITATION.cff).
+If you publish a copy of the guide on the web, please also link each page to its original on emailmarketingskill.com and mark your copy `noindex` (or point its canonical tag at the original). Those two are requests, not licence conditions. Cite it as: George Hartley, *Email Marketing Bible*, https://emailmarketingskill.com.
 
 ## Contributing
 

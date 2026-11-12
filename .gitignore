@@ -34,5 +34,5 @@ emb-research/
 ProductHunt/
 .claude/
 
-# Build output (scripts/build-skill-zip.sh)
+# Build output (.github/actions/build-skill-zip)
 dist/

@@ -24,7 +24,7 @@ jobs:
         with:
           ref: ${{ github.event.release.tag_name || inputs.tag }}
       - name: Build the skill ZIP
-        run: ./scripts/build-skill-zip.sh
+        uses: ./.github/actions/build-skill-zip
       - name: Attach it to the release
         env:
           GH_TOKEN: ${{ github.token }}

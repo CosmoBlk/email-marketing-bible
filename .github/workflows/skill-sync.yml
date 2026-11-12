@@ -45,7 +45,12 @@ jobs:
             exit 1
           fi
       - name: Skill ZIP builds and meets the claude.ai upload rules
-        run: ./scripts/build-skill-zip.sh
+        uses: ./.github/actions/build-skill-zip
+      - name: Keep the ZIP for testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-marketing-bible-zip
+          path: dist/email-marketing-bible.zip
       - name: Core SKILL.md budget
         run: |
           words=$(wc -w < SKILL.md)

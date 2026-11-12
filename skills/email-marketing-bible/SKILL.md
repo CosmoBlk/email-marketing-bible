@@ -15,14 +15,14 @@ description: >
 license: MIT
 metadata:
   author: george-hartley
-  version: "2.8.3"
+  version: "2.8.4"
 ---
 
 # Email Marketing Bible
 
 By George Hartley, co-founder of [Nitrosend](https://nitrosend.com). Disclosure: Nitrosend is one of the platforms compared in references/platforms.md.
 
-> v2.8.3, 12 Nov 2026. Distilled from the EMB guide (19 chapters), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
+> v2.8.4, 12 Nov 2026. Distilled from the EMB guide (19 chapters), from running SmartrMail (~12K customers, 6B emails, sold 2022) and field notes from running an ESP through agents.
 > Rules and gates are here; detail is in `references/`, named by the router (§2). If `references/` is missing, ask the user to install the full package or paste https://emailmarketingskill.com/llms.txt (then use its URLs verbatim). Otherwise name the chapter and never invent the figure.
 
 ## 0. Operating rules and the send gate

@@ -29,7 +29,7 @@ claude plugin validate --strict .
 ## 4. Check the install paths
 
 - **Double load.** Clone fresh into a scratch skills folder, then run `claude plugin list` and `claude plugin details email-marketing-bible`. Record the on-invoke token count (target under 4,500) and whether the skill is listed twice.
-- **Claude upload.** Run `./scripts/build-skill-zip.sh`, then upload `dist/email-marketing-bible.zip` on claude.ai (Customize > Skills > + > Create skill > Upload a skill) and ask it for a welcome series. Remove the test skill afterwards.
+- **Claude upload.** Download the `email-marketing-bible-zip` artifact from the push's Skill checks run (the build lives in `.github/actions/build-skill-zip/action.yml`), then upload it on claude.ai (Customize > Skills > + > Create skill > Upload a skill) and ask it for a welcome series. Remove the test skill afterwards.
 - **Release asset.** Publishing the GitHub release runs `.github/workflows/release-zip.yml`, which attaches the ZIP. Check https://github.com/CosmoBlk/email-marketing-bible/releases/latest/download/email-marketing-bible.zip downloads before announcing the release.
 - **Links.** Check every URL in `SKILL.md` and `references/` returns 200. Some sites (OpenAI, Meta, the FTC, Légifrance, the CRTC, Figma) block non-browser requests; open those in a browser.
 

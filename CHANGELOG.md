@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.4 (12 Nov 2026)
+
+### Changed
+
+- **Only directory-accepted file types in the plugin folder.** The Claude plugin directory refused 2.8.3 with "Files outside the allowed types accepted only from Verified organizations". The whole repository is the plugin folder, and 2.8.3 added two new file types: `scripts/build-skill-zip.sh` and `CITATION.cff`. The ZIP build now lives in a composite action, `.github/actions/build-skill-zip/action.yml`, used by CI and the release workflow, and CI keeps each build as a downloadable artifact. `CITATION.cff` is gone; the README says how to cite. No change to the skill itself.
+
 ## 2.8.3 (12 Nov 2026)
 
 ### Added
